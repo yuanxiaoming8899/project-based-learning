@@ -1,671 +1,791 @@
-# Project Based Learning
-
-[![Gitter](https://badges.gitter.im/practical-tutorials/community.svg)](https://gitter.im/practical-tutorials/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
-
-A list of programming tutorials in which aspiring software developers learn how to build an application from scratch. These tutorials are divided into different primary programming languages. Tutorials may involve multiple technologies and languages.
-
-To get started, simply fork this repo. Please refer to [CONTRIBUTING.md](CONTRIBUTING.md) for contribution guidelines.
-
-## Table of Contents:
-
-- [C#](#c)
-- [C/C++](#cc)
-- [Clojure](#clojure)
-- [Dart](#dart)
-- [Elixir](#elixir)
-- [Erlang](#erlang)
-- [F#](#f)
-- [Go](#go)
-- [Haskell](#haskell)
-- [HTML/CSS](#html-and-css)
-- [Java](#java)
-- [JavaScript](#javascript)
-- [Kotlin](#kotlin)
-- [Lua](#lua)
-- [OCaml](#ocaml)
-- [PHP](#php)
-- [Python](#python)
-- [R](#r)
-- [Ruby](#ruby)
-- [Rust](#rust)
-- [Scala](#scala)
-- [Swift](#swift)
-- [Additional resources](#additional-resources)
-
-## C/C++:
-
-- [Build an Interpreter](http://www.craftinginterpreters.com/) (Chapter 14 on is written in C)
-- [Memory Allocators 101 - Write a simple memory allocator](https://arjunsreedharan.org/post/148675821737/memory-allocators-101-write-a-simple-memory)
-- [Write a Shell in C](https://brennan.io/2015/01/16/write-a-shell-in-c/)
-- [Write a FUSE Filesystem](https://www.cs.nmsu.edu/~pfeiffer/fuse-tutorial/)
-- [Build Your Own Text Editor](http://viewsourcecode.org/snaptoken/kilo/)
-- [Build Your Own Lisp](http://www.buildyourownlisp.com/)
-- [How to Program an NES Game in C](https://nesdoug.com/)
-- [Write an OS from scratch](https://github.com/tuhdo/os01)
-- [How to create an OS from scratch ](https://github.com/cfenollosa/os-tutorial)
-- [Building a CHIP-8 Emulator](https://austinmorlan.com/posts/chip8_emulator/)
-- [Beginning Game Programming with C++ and SDL](http://lazyfoo.net/tutorials/SDL/)
-- [Implementing a Key-Value Store](http://codecapsule.com/2012/11/07/ikvs-implementing-a-key-value-store-table-of-contents/)
-- Tiny 3D graphics projects
-  - [Tiny Renderer or how OpenGL works: software rendering in 500 lines of code](https://github.com/ssloy/tinyrenderer/wiki)
-  - [Understandable RayTracing in 256 lines of bare C++](https://github.com/ssloy/tinyraytracer/wiki)
-  - [KABOOM! in 180 lines of bare C++](https://github.com/ssloy/tinykaboom/wiki)
-  - [486 lines of C++: old-school FPS in a weekend](https://github.com/ssloy/tinyraycaster/wiki)
-- Writing a minimal x86-64 JIT compiler in C++
-  - [Part 1](https://solarianprogrammer.com/2018/01/10/writing-minimal-x86-64-jit-compiler-cpp/)
-  - [Part 2](https://solarianprogrammer.com/2018/01/12/writing-minimal-x86-64-jit-compiler-cpp-part-2/)
-- [Build a Live Code-reloader Library for C++](http://howistart.org/posts/cpp/1/index.html)
-- [Write a hash table in C](https://github.com/jamesroutley/write-a-hash-table)
-- [Let's Build a Simple Database](https://cstack.github.io/db_tutorial/)
-- [Let's Write a Kernel](http://arjunsreedharan.org/post/82710718100/kernel-101-lets-write-a-kernel)
-- [Write a Bootloader in C](http://3zanders.co.uk/2017/10/13/writing-a-bootloader/)
-- [Linux Container in 500 Lines of Code](https://blog.lizzie.io/linux-containers-in-500-loc.html)
-- [Write Your Own Virtual Machine](https://justinmeiners.github.io/lc3-vm/)
-- [Learning KVM - Implement Your Own Linux Kernel](https://david942j.blogspot.com/2018/10/note-learning-kvm-implement-your-own.html)
-- [Build Your Own Redis with C/C++](https://build-your-own.org/redis/)
-- Write a C compiler
-  - [Part 1: Integers, Lexing and Code Generation](https://norasandler.com/2017/11/29/Write-a-Compiler.html)
-  - [Part 2: Unary Operators](https://norasandler.com/2017/12/05/Write-a-Compiler-2.html)
-  - [Part 3: Binary Operators](https://norasandler.com/2017/12/15/Write-a-Compiler-3.html)
-  - [Part 4: Even More Binary Operators](https://norasandler.com/2017/12/28/Write-a-Compiler-4.html)
-  - [Part 5: Local Variables](https://norasandler.com/2018/01/08/Write-a-Compiler-5.html)
-  - [Part 6: Conditionals](https://norasandler.com/2018/02/25/Write-a-Compiler-6.html)
-  - [Part 7: Compound Statements](https://norasandler.com/2018/03/14/Write-a-Compiler-7.html)
-  - [Part 8: Loops](https://norasandler.com/2018/04/10/Write-a-Compiler-8.html)
-  - [Part 9: Functions](https://norasandler.com/2018/06/27/Write-a-Compiler-9.html)
-  - [Part 10: Global Variables](https://norasandler.com/2019/02/18/Write-a-Compiler-10.html)
-- [Implementing a Language with LLVM](https://llvm.org/docs/tutorial/#kaleidoscope-implementing-a-language-with-llvm)
-- [Meta Crush Saga: a C++17 compile-time game](https://jguegant.github.io//jguegant.github.io/blogs/tech/meta-crush-saga.html)
-- [High-Performance Matrix Multiplication](https://gist.github.com/nadavrot/5b35d44e8ba3dd718e595e40184d03f0)
-- Space Invaders from Scratch
-  - [Part 1](http://nicktasios.nl/posts/space-invaders-from-scratch-part-1.html)
-  - [Part 2](http://nicktasios.nl/posts/space-invaders-from-scratch-part-2.html)
-  - [Part 3](http://nicktasios.nl/posts/space-invaders-from-scratch-part-3.html)
-  - [Part 4](http://nicktasios.nl/posts/space-invaders-from-scratch-part-4.html)
-  - [Part 5](http://nicktasios.nl/posts/space-invaders-from-scratch-part-5.html)
-- [Tetris Tutorial in C++ Platform Independent](http://javilop.com/gamedev/tetris-tutorial-in-c-platform-independent-focused-in-game-logic-for-beginners/)
-- Writing a Linux Debugger
-  - [Part 1: Setup](https://blog.tartanllama.xyz/writing-a-linux-debugger-setup/)
-  - [Part 2: Breakpoints](https://blog.tartanllama.xyz/writing-a-linux-debugger-breakpoints/)
-  - [Part 3: Registers and memory](https://blog.tartanllama.xyz/writing-a-linux-debugger-registers/)
-  - [Part 4: Elves and dwarves](https://blog.tartanllama.xyz/writing-a-linux-debugger-elf-dwarf/)
-  - [Part 5: Source and signals](https://blog.tartanllama.xyz/writing-a-linux-debugger-source-signal/)
-  - [Part 6: Source-level stepping](https://blog.tartanllama.xyz/writing-a-linux-debugger-dwarf-step/)
-  - [Part 7: Source-level breakpoints](https://blog.tartanllama.xyz/writing-a-linux-debugger-source-break/)
-  - [Part 8: Stack unwinding](https://blog.tartanllama.xyz/writing-a-linux-debugger-unwinding/)
-  - [Part 9: Handling variables](https://blog.tartanllama.xyz/writing-a-linux-debugger-variables/)
-  - [Part 10: Advanced topics](https://blog.tartanllama.xyz/writing-a-linux-debugger-advanced-topics/)
-- Let's write a compiler
-  - [Part 1: Introduction, selecting a language, and doing some planning](https://briancallahan.net/blog/20210814.html)
-  - [Part 2: A lexer](https://briancallahan.net/blog/20210815.html)
-  - [Part 3: A parser](https://briancallahan.net/blog/20210816.html)
-  - [Part 4: Testing](https://briancallahan.net/blog/20210817.html)
-  - [Part 5: A code generator](https://briancallahan.net/blog/20210818.html)
-  - [Part 6: Input and output](https://briancallahan.net/blog/20210819.html)
-  - [Part 7: Arrays](https://briancallahan.net/blog/20210822.html)
-  - [Part 8: Strings, forward references, and conclusion](https://briancallahan.net/blog/20210826.html)
-
-### Network programming
-
-- Let's Code a TCP/IP Stack
-
-  - [Part 1: Ethernet & ARP](http://www.saminiir.com/lets-code-tcp-ip-stack-1-ethernet-arp/)
-  - [Part 2: IPv4 & ICMPv4](http://www.saminiir.com/lets-code-tcp-ip-stack-2-ipv4-icmpv4/)
-  - [Part 3: TCP Basics & Handshake](http://www.saminiir.com/lets-code-tcp-ip-stack-3-tcp-handshake/)
-  - [Part 4: TCP Data Flow & Socket API](http://www.saminiir.com/lets-code-tcp-ip-stack-4-tcp-data-flow-socket-api/)
-  - [Part 5: TCP Retransmission](http://www.saminiir.com/lets-code-tcp-ip-stack-5-tcp-retransmission/)
-
-- Programming concurrent servers
-
-  - [Part 1 - Introduction](https://eli.thegreenplace.net/2017/concurrent-servers-part-1-introduction/)
-  - [Part 2 - Threads](https://eli.thegreenplace.net/2017/concurrent-servers-part-2-threads/)
-  - [Part 3 - Event-driven](https://eli.thegreenplace.net/2017/concurrent-servers-part-3-event-driven/)
-  - [Part 4 - libuv](https://eli.thegreenplace.net/2017/concurrent-servers-part-4-libuv/)
-  - [Part 5 - Redis case study](https://eli.thegreenplace.net/2017/concurrent-servers-part-5-redis-case-study/)
-  - [Part 6 - Callbacks, Promises and async/await](https://eli.thegreenplace.net/2018/concurrent-servers-part-6-callbacks-promises-and-asyncawait/)
-
-- MQTT Broker from scratch
-  - [Part 1 - The protocol](https://codepr.github.io/posts/sol-mqtt-broker)
-  - [Part 2 - Networking](https://codepr.github.io/posts/sol-mqtt-broker-p2)
-  - [Part 3 - Server](https://codepr.github.io/posts/sol-mqtt-broker-p3)
-  - [Part 4 - Data structures](https://codepr.github.io/posts/sol-mqtt-broker-p4)
-  - [Part 5 - Topic abstraction](https://codepr.github.io/posts/sol-mqtt-broker-p5)
-  - [Part 6 - Handlers](https://codepr.github.io/posts/sol-mqtt-broker-p6)
-  - [Bonus - Multithreading](https://codepr.github.io/posts/sol-mqtt-broker-bonus)
-
-### OpenGL:
-
-- Creating 2D Breakout game clone in C++ with OpenGL
-  - [Breakout](https://learnopengl.com/In-Practice/2D-Game/Breakout)
-  - [Setting up](https://learnopengl.com/In-Practice/2D-Game/Setting-up)
-  - [Rendering Sprites](https://learnopengl.com/In-Practice/2D-Game/Rendering-Sprites)
-  - [Levels](https://learnopengl.com/In-Practice/2D-Game/Levels)
-  - Collisions
-    - [Ball](https://learnopengl.com/In-Practice/2D-Game/Collisions/Ball)
-    - [Collision detection](https://learnopengl.com/In-Practice/2D-Game/Collisions/Collision-detection)
-    - [Collision resolution](https://learnopengl.com/In-Practice/2D-Game/Collisions/Collision-resolution)
-  - [Particles](https://learnopengl.com/In-Practice/2D-Game/Particles)
-  - [Postprocessing](https://learnopengl.com/In-Practice/2D-Game/Postprocessing)
-  - [Powerups](https://learnopengl.com/In-Practice/2D-Game/Powerups)
-  - [Audio](https://learnopengl.com/In-Practice/2D-Game/Audio)
-  - [Render text](https://learnopengl.com/In-Practice/2D-Game/Render-text)
-  - [Final thoughts](https://learnopengl.com/In-Practice/2D-Game/Final-thoughts)
-- [Handmade Hero](https://handmadehero.org)
-- [How to Make Minecraft in C++/OpenGL](https://www.youtube.com/playlist?list=PLMZ_9w2XRxiZq1vfw1lrpCMRDufe2MKV_) (video)
-
-## C#:
-
-- [Learn C# By Building a Simple RPG Game](http://scottlilly.com/learn-c-by-building-a-simple-rpg-index/)
-- [Create a Rogue-like game in C#](https://roguesharp.wordpress.com/)
-- [Create a Blank App with C# and Xamarin (work in progress)](https://www.intertech.com/Blog/xamarin-tutorial-part-1-create-a-blank-app/)
-- [Build iOS Photo Library App with Xamarin and Visual Studio](https://www.raywenderlich.com/134049/building-ios-apps-with-xamarin-and-visual-studio)
-- [Building the CoreWiki](https://www.youtube.com/playlist?list=PLVMqA0_8O85yC78I4Xj7z48ES48IQBa7p) This is a Wiki-style content management system that has been completely written in C# with ASP.NET Core and Razor Pages. You can find the source code [here](https://github.com/csharpfritz/CoreWiki).
-
-## Clojure:
-
-- [Build a Twitter Bot with Clojure](http://howistart.org/posts/clojure/1/index.html)
-- [Building a Spell-Checker](https://bernhardwenzel.com/articles/clojure-spellchecker/)
-- [Building a JIRA integration with Clojure & Atlassian Connect](https://hackernoon.com/building-a-jira-integration-with-clojure-atlassian-connect-506ebd112807)
-- [Prototyping with Clojure](https://github.com/aliaksandr-s/prototyping-with-clojure)
-- [Tetris in ClojureScript](https://shaunlebron.github.io/t3tr0s-slides)
-
-## Dart:
-
-### Flutter:
-
-- [Amazon Clone with Admin Panel](https://youtu.be/O3nmP-lZAdg)
-- [Food Delivery App](https://youtu.be/7dAt-JMSCVQ)
-- [Google Docs Clone](https://youtu.be/0_GJ1w_iG44)
-- [Instagram Clone](https://youtu.be/mEPm9w5QlJM)
-- [Multiplayer TicTacToe Game](https://youtu.be/Aut-wfXacXg)
-- [TikTok Clone](https://youtu.be/4E4V9F3cbp4)
-- [Ticket Booking App](https://youtu.be/71AsYo2q_0Y)
-- [Travel App](https://youtu.be/x4DydJKVvQk)
-- [Twitch Clone](https://youtu.be/U9YKZrDX0CQ)
-- [WhatsApp Clone](https://youtu.be/yqwfP2vXWJQ)
-- [Wordle Clone](https://youtu.be/_W0RN_Cqhpg)
-- [Zoom Clone](https://youtu.be/sMA1dKbv33Y)
-- [Netflix Clone](https://youtu.be/J8IFNKzs3TI)
-
-## Elixir
-
-- [Building a Simple Chat App With Elixir and Phoenix](https://sheharyar.me/blog/simple-chat-phoenix-elixir/)
-- [How to write a super fast link shortener with Elixir, Phoenix, and Mnesia](https://medium.com/free-code-camp/how-to-write-a-super-fast-link-shortener-with-elixir-phoenix-and-mnesia-70ffa1564b3c)
-
-## Erlang
-
-- [ChatBus : build your first multi-user chat room app with Erlang/OTP](https://medium.com/@kansi/chatbus-build-your-first-multi-user-chat-room-app-with-erlang-otp-b55f72064901)
-- [Making a Chat App with Erlang, Rebar, Cowboy and Bullet](http://marianoguerra.org/posts/making-a-chat-app-with-erlang-rebar-cowboy-and-bullet.html)
-
-## F#:
-
-- [Write your own Excel in 100 lines of F#](http://tomasp.net/blog/2018/write-your-own-excel)
-
-## Java:
-
-- [Build an Interpreter](http://www.craftinginterpreters.com/) (Chapter 4-13 is written in Java)
-- [Build a Simple HTTP Server with Java](http://javarevisited.blogspot.com/2015/06/how-to-create-http-server-in-java-serversocket-example.html)
-- [Build an Android Flashlight App](https://www.youtube.com/watch?v=dhWL4DC7Krs) (video)
-- [Build a Spring Boot App with User Authentication](https://spring.io/guides/gs/securing-web/)
-
-## JavaScript:
-
-- [Build 30 things in 30 days with 30 tutorials](https://javascript30.com)
-- [Build an App in Pure JS](https://medium.com/codingthesmartway-com-blog/pure-javascript-building-a-real-world-application-from-scratch-5213591cfcd6)
-- [Build a Jupyter Notebook Extension](https://link.medium.com/wWUO7TN8SS)
-- [Build a TicTacToe Game with JavaScript](https://medium.com/javascript-in-plain-english/build-tic-tac-toe-game-using-javascript-3afba3c8fdcc)
-- [Build a Simple Weather App With Vanilla JavaScript](https://webdesign.tutsplus.com/tutorials/build-a-simple-weather-app-with-vanilla-javascript--cms-33893)
-- [Build a Todo List App in JavaScript](https://github.com/dwyl/javascript-todo-list-tutorial)
-
-## HTML and CSS:
-
-- [Build A Loading Screen](https://medium.freecodecamp.org/how-to-build-a-delightful-loading-screen-in-5-minutes-847991da509f)
-- [Build an HTML Calculator with JS](https://medium.freecodecamp.org/how-to-build-an-html-calculator-app-from-scratch-using-javascript-4454b8714b98)
-- [Build Snake using only JavaScript, HTML & CSS](https://www.freecodecamp.org/news/think-like-a-programmer-how-to-build-snake-using-only-javascript-html-and-css-7b1479c3339e/)
-
-### Mobile Application:
-
-- [Build a React Native Todo Application](https://egghead.io/courses/build-a-react-native-todo-application)
-- [Build a React Native Application with Redux Thunk](https://medium.com/@alialhaddad/how-to-use-redux-thunk-in-react-and-react-native-4743a1321bd0)
-
-### Web Applications:
-
-#### React:
-
-- [Create Serverless React.js Apps](http://serverless-stack.com/)
-- [Create a Trello Clone](http://codeloveandboards.com/blog/2016/01/04/trello-tribute-with-phoenix-and-react-pt-1/)
-- [Create a Character Voting App with React, Node, MongoDB and SocketIO](http://sahatyalkabov.com/create-a-character-voting-app-using-react-nodejs-mongodb-and-socketio)
-- [React Tutorial: Cloning Yelp](https://www.fullstackreact.com/articles/react-tutorial-cloning-yelp/)
-- [Build a Full Stack Movie Voting App with Test-First Development using Mocha, React, Redux and Immutable](https://teropa.info/blog/2015/09/10/full-stack-redux-tutorial.html)
-- [Build a Twitter Stream with React and Node](https://scotch.io/tutorials/build-a-real-time-twitter-stream-with-node-and-react-js)
-- [Build A Simple Medium Clone using React.js and Node.js](https://medium.com/@kris101/clone-medium-on-node-js-and-react-js-731cdfbb6878)
-- [Integrate MailChimp in JS](https://medium.freecodecamp.org/how-to-integrate-mailchimp-in-a-javascript-web-app-2a889fb43f6f)
-- [Build A Chrome Extension with React + Parcel](https://medium.freecodecamp.org/building-chrome-extensions-in-react-parcel-79d0240dd58f)
-- [Build A ToDo App With React Native](https://blog.hasura.io/tutorial-fullstack-react-native-with-graphql-and-authentication-18183d13373a)
-- [Make a Chat Application](https://medium.freecodecamp.org/how-to-build-a-chat-application-using-react-redux-redux-saga-and-web-sockets-47423e4bc21a)
-- [Create a News App with React Native](https://medium.freecodecamp.org/create-a-news-app-using-react-native-ced249263627)
-- [Learn Webpack For React](https://medium.freecodecamp.org/learn-webpack-for-react-a36d4cac5060)
-- [Testing React App With Puppeteer and Jest](https://blog.bitsrc.io/testing-your-react-app-with-puppeteer-and-jest-c72b3dfcde59)
-- [Build Your Own React Boilerplate](https://medium.freecodecamp.org/how-to-build-your-own-react-boilerplate-2f8cbbeb9b3f)
-- [Code The Game Of Life With React](https://medium.freecodecamp.org/create-gameoflife-with-react-in-one-hour-8e686a410174)
-- [A Basic React+Redux Introductory Tutorial](https://hackernoon.com/a-basic-react-redux-introductory-tutorial-adcc681eeb5e)
-- [Build an Appointment Scheduler](https://hackernoon.com/build-an-appointment-scheduler-using-react-twilio-and-cosmic-js-95377f6d1040)
-- [Build A Chat App with Sentiment Analysis](https://codeburst.io/build-a-chat-app-with-sentiment-analysis-using-next-js-c43ebf3ea643)
-- [Build A Full Stack Web Application Setup](https://hackernoon.com/full-stack-web-application-using-react-node-js-express-and-webpack-97dbd5b9d708)
-- [Create Todoist clone with React and Firebase](https://www.youtube.com/watch?v=hT3j87FMR6M)
-- Build A Random Quote Machine
-  - [Part 1](https://www.youtube.com/watch?v=3QngsWA9IEE)
-  - [Part 2](https://www.youtube.com/watch?v=XnoTmO06OYo)
-  - [Part 3](https://www.youtube.com/watch?v=us51Jne67_I)
-  - [Part 4](https://www.youtube.com/watch?v=iZx7hqHb5MU)
-  - [Part 5](https://www.youtube.com/watch?v=lpba9vBqXl0)
-  - [Part 6](https://www.youtube.com/watch?v=Jvp8j6zrFHE)
-  - [Part 7](https://www.youtube.com/watch?v=M_hFfrN8_PQ)
-- [React Phone E-Commerce Project(video)](https://www.youtube.com/watch?v=-edmQKcOW8s)
-
-#### Angular:
-
-- [Build an Instagram Clone with Angular 1.x](https://hackhands.com/building-instagram-clone-angularjs-satellizer-nodejs-mongodb/)
-- Build an offline-capable Hacker News client with Angular 2+
-  - [Part 1](https://houssein.me/angular2-hacker-news)
-  - [Part 2](https://houssein.me/progressive-angular-applications)
-- [Build a Google+ clone with Django and AngularJS (Angular 1.x)](https://thinkster.io/django-angularjs-tutorial)
-- Build A Beautiful Real World App with Angular 8 :
-
-  - [Part I](https://medium.com/@hamedbaatour/build-a-real-world-beautiful-web-app-with-angular-6-a-to-z-ultimate-guide-2018-part-i-e121dd1d55e)
-  - [Part II](https://medium.com/@hamedbaatour/build-a-real-world-beautiful-web-app-with-angular-8-the-ultimate-guide-2019-part-ii-fe70852b2d6d)
-
-- [Build Responsive layout with BootStrap 4 and Angular 6](https://medium.com/@tomastrajan/how-to-build-responsive-layouts-with-bootstrap-4-and-angular-6-cfbb108d797b)
-- ToDo App with Angular 5
-  - [Introduction to Angular](http://www.discoversdk.com/blog/intro-to-angular-and-the-evolution-of-the-web)
-  - [Part 1](http://www.discoversdk.com/blog/angular-5-to-do-list-app-part-1)
-
-#### Node:
-
-- [Build a real-time Markdown Editor with NodeJS](https://scotch.io/tutorials/building-a-real-time-markdown-viewer)
-- [Test-Driven Development with Node, Postgres and Knex](http://mherman.org/blog/2016/04/28/test-driven-development-with-node/)
-- Write a Twitter Bot in Node.js
-  - [Part 1](https://codeburst.io/build-a-simple-twitter-bot-with-node-js-in-just-38-lines-of-code-ed92db9eb078)
-  - [Part 2](https://codeburst.io/build-a-simple-twitter-bot-with-node-js-part-2-do-more-2ef1e039715d)
-- [Build A Simple Search Bot in 30 minutes](https://medium.freecodecamp.org/how-to-build-a-simple-search-bot-in-30-minutes-eb56fcedcdb1)
-- [Build A Job Scraping Web App](https://medium.freecodecamp.org/how-i-built-a-job-scraping-web-app-using-node-js-and-indreed-7fbba124bbdc)
-- [Building a GitHub App](https://blog.scottlogic.com/2017/05/22/gifbot-github-integration.html)
-- How to build your own Uber-for-X App using JavaScript, Node.JS, MongoDB and Web Sockets
-  - [Part 1](https://www.ashwinhariharan.tech/blog/how-to-build-your-own-uber-for-x-app/)
-  - [Part 2](https://www.ashwinhariharan.tech/blog/how-to-build-your-own-uber-for-x-app-part-2/)
-
-#### Vue
-
-- [Vue 2 + Firebase: How to build a Vue app with Firebase authentication system in 15 minutes](https://medium.com/@anas.mammeri/vue-2-firebase-how-to-build-a-vue-app-with-firebase-authentication-system-in-15-minutes-fdce6f289c3c)
-- [Vue.js Application Tutorial – Creating a Simple Budgeting App with Vue](https://matthiashager.com/complete-vuejs-application-tutorial/)
-- [Build a Blog with Vue, GraphQL and Apollo](https://scotch.io/tutorials/build-a-blog-with-vue-graphql-and-apollo-client)
-- Build a full stack web application using MEVN (MongoDB, Express, Vue, Node) stack
-  - [Part 1](https://medium.com/@anaida07/mevn-stack-application-part-1-3a27b61dcae0)
-  - [Part 2](https://medium.com/@anaida07/mevn-stack-application-part-2-2-9ebcf8a22753)
-- [Vue.js To-Do List Tutorial (video)](https://www.youtube.com/watch?v=78tNYZUS-ps)
-- [Vue 2 + Pub/Sub: Build a peer to peer multi-user platform for games](https://www.ably.io/tutorials/peer-to-peer-vue)
-
-#### Others (Hapi, Express...):
-
-- Build a Progressive Web Application (PWA)
-  - [Part 1](https://bitsofco.de/bitsofcode-pwa-part-1-offline-first-with-service-worker/)
-  - [Part 2](https://bitsofco.de/bitsofcode-pwa-part-2-instant-loading-with-indexeddb/)
-  - [Part 3](https://bitsofco.de/bitsofcode-pwa-part-3-push-notifications/)
-- [Build A Native Desktop App with JS](https://medium.freecodecamp.org/build-native-desktop-apps-with-javascript-a49ede90d8e9)
-- Build a Powerful API with NodeJs,GraphQL and Hapi
-  - [Part I](https://medium.com/@wesharehoodies/how-to-setup-a-powerful-api-with-nodejs-graphql-mongodb-hapi-and-swagger-e251ac189649)
-
-#### D3.js
-
-- [Learn D3 using examples](https://www.sitepoint.com/d3-js-data-visualizations/)
-- [Learn To Make A Line Chart](https://medium.freecodecamp.org/learn-to-create-a-line-chart-using-d3-js-4f43f1ee716b)
-
-### Game Development:
-
-- [Make 2D Breakout Game using Phaser](https://developer.mozilla.org/en-US/docs/Games/Tutorials/2D_breakout_game_Phaser)
-- Make Flappy Bird in HTML5 and JavaScript with Phaser
-  - [Part 1](http://www.lessmilk.com/tutorial/flappy-bird-phaser-1)
-  - [Part 2](http://www.lessmilk.com/tutorial/flappy-bird-phaser-2)
-
-### Desktop Application:
-
-- [Build A Desktop Chat App with React and Electron](https://medium.freecodecamp.org/build-a-desktop-chat-app-with-react-electron-and-chatkit-744d168e6f2f)
-
-### Miscellaneous:
-
-- [How to Build a Web Framework in Less Than 20 Lines of Code](https://www.pubnub.com/blog/build-yourself-a-web-framework-in-less-than-20-lines-of-code/)
-- [Build Yourself a Redux](https://zapier.com/engineering/how-to-build-redux/)
-- [How to write your own Virtual DOM](https://medium.com/@deathmood/how-to-write-your-own-virtual-dom-ee74acc13060)
-- [Build A Realtime Serverless GraphQL API with WebSockets on AWS](https://andrewgriffithsonline.com/blog/serverless-websockets-on-aws/)
-
-## Kotlin:
-
-- [Keddit - Learn Kotlin While Developing an Android Application](https://medium.com/@juanchosaravia/learn-kotlin-while-developing-an-android-app-introduction-567e21ff9664)
-
-## Lua:
-
-### LÖVE:
-
-- BYTEPATH: Creation of a Complete Game with Lua and LÖVE
-  - [Part 0: Introduction](https://github.com/SSYGEN/blog/issues/30)
-  - [Part 1: Game Loop](https://github.com/SSYGEN/blog/issues/15)
-  - [Part 2: Libraries](https://github.com/SSYGEN/blog/issues/16)
-  - [Part 3: Rooms and Areas](https://github.com/SSYGEN/blog/issues/17)
-  - [Part 4: Exercises](https://github.com/SSYGEN/blog/issues/18)
-  - [Part 5: Game Basics](https://github.com/SSYGEN/blog/issues/19)
-  - [Part 6: Player Basics](https://github.com/SSYGEN/blog/issues/20)
-  - [Part 7: Player Stats and Attacks](https://github.com/SSYGEN/blog/issues/21)
-  - [Part 8: Enemies](https://github.com/SSYGEN/blog/issues/22)
-  - [Part 9: Director and Gameplay Loop](https://github.com/SSYGEN/blog/issues/23)
-  - [Part 10: Coding Practices](https://github.com/SSYGEN/blog/issues/24)
-  - [Part 11: Passives](https://github.com/SSYGEN/blog/issues/25)
-  - [Part 12: More Passives](https://github.com/SSYGEN/blog/issues/26)
-  - [Part 13: Skill Tree](https://github.com/SSYGEN/blog/issues/27)
-  - [Part 14: Console](https://github.com/SSYGEN/blog/issues/28)
-  - [Part 15: Final](https://github.com/SSYGEN/blog/issues/29)
-
-## Python:
-
-### Web Scraping:
-
-- [Mining Twitter Data with Python](https://marcobonzanini.com/2015/03/02/mining-twitter-data-with-python-part-1/)
-- [Scrape a Website with Scrapy and MongoDB](https://realpython.com/blog/python/web-scraping-with-scrapy-and-mongodb/)
-- [How To Scrape With Python and Selenium WebDriver](http://www.byperth.com/2018/04/25/guide-web-scraping-101-what-you-need-to-know-and-how-to-scrape-with-python-selenium-webdriver/)
-- [Which Movie Should I Watch using BeautifulSoup](https://medium.com/@nishantsahoo.in/which-movie-should-i-watch-5c83a3c0f5b1)
-
-### Web Applications:
-
-- [Build a Microblog with Flask](https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-i-hello-world)
-- [Create a Blog Web App In Django](https://tutorial.djangogirls.org/en/)
-- [Choose Your Own Adventure Presentations](https://www.twilio.com/blog/2015/03/choose-your-own-adventures-presentations-wizard-mode-part-1-of-3.html)
-- [Build a Todo List with Flask and RethinkDB](https://realpython.com/blog/python/rethink-flask-a-simple-todo-list-powered-by-flask-and-rethinkdb/)
-- [Build a Todo List with Django and Test-Driven Development](http://www.obeythetestinggoat.com/)
-- [Build a RESTful Microservice in Python](http://www.skybert.net/python/developing-a-restful-micro-service-in-python/)
-- [Microservices with Docker, Flask, and React](https://testdriven.io/)
-- [Build A Simple Web App With Flask](https://pythonspot.com/flask-web-app-with-python/)
-- [Create A Django API in under 20 minutes](https://codeburst.io/create-a-django-api-in-under-20-minutes-2a082a60f6f3)
-- Build a Community-driven delivery application with Django, Postgres and JavaScript
-  - [Part 1](https://www.ashwinhariharan.tech/blog/thinking-of-building-a-contact-tracing-application-heres-what-you-can-do-instead/)
-  - [Part 2](https://www.ashwinhariharan.tech/blog/thinking-of-building-a-contact-tracing-application-heres-what-you-can-do-instead-part-2/)
-- Realtime Chat application with Vue, django-notifs, RabbitMQ and uWSGI
-  - [Part 1](https://danidee10.github.io/2018/01/01/realtime-django-1.html)
-  - [Part 2](https://danidee10.github.io/2018/01/03/realtime-django-2.html)
-  - [Part 3](https://danidee10.github.io/2018/01/07/realtime-django-3.html)
-  - [Part 4](https://danidee10.github.io/2018/01/10/realtime-django-4.html)
-  - [Part 5](https://danidee10.github.io/2018/01/13/realtime-django-5.html)
-  - [Part 6](https://danidee10.github.io/2018/03/12/realtime-django-6.html)
-
-### Bots:
-
-- [Build a Reddit Bot](http://pythonforengineers.com/build-a-reddit-bot-part-1/)
-- [How to Make a Reddit Bot - YouTube](https://www.youtube.com/watch?v=krTUf7BpTc0) (video)
-- [Build a Facebook Messenger Bot](https://blog.hartleybrody.com/fb-messenger-bot/)
-- [Making a Reddit + Facebook Messenger Bot](https://pythontips.com/2017/04/13/making-a-reddit-facebook-messenger-bot/)
-- How To Create a Telegram Bot Using Python
-  - [Part 1](https://khashtamov.com/en/how-to-create-a-telegram-bot-using-python/)
-  - [Part 2](https://khashtamov.com/en/how-to-deploy-telegram-bot-django/)
-- [Create a Twitter Bot In Python](https://medium.freecodecamp.org/creating-a-twitter-bot-in-python-with-tweepy-ac524157a607)
-
-### Data Science:
-
-- Learn Python For Data Science by Doing Several Projects (video):
-  - [Part 1: Introduction](https://www.youtube.com/watch?v=T5pRlIbr6gg)
-  - [Part 2: Twitter Sentiment Analysis](https://www.youtube.com/watch?v=o_OZdbCzHUA)
-  - [Part 3: Recommendation Systems](https://www.youtube.com/watch?v=9gBC9R-msAk&list=PL2-dafEMk2A6QKz1mrk1uIGfHkC1zZ6UU&index=3)
-  - [Part 4: Predicting Stock Prices](https://www.youtube.com/watch?v=SSu00IRRraY&index=4&list=PL2-dafEMk2A6QKz1mrk1uIGfHkC1zZ6UU)
-  - [Part 5: Deep Dream in TensorFlow](https://www.youtube.com/watch?v=MrBzgvUNr4w&list=PL2-dafEMk2A6QKz1mrk1uIGfHkC1zZ6UU&index=5)
-  - [Part 6: Genetic Algorithms](https://www.youtube.com/watch?v=dSofAXnnFrY&index=6&list=PL2-dafEMk2A6QKz1mrk1uIGfHkC1zZ6UU)
-
-### Machine Learning:
-
-- [Write Linear Regression From Scratch in Python](https://www.youtube.com/watch?v=uwwWVAgJBcM) (video)
-- [Step-By-Step Machine Learning In Python](https://machinelearningmastery.com/machine-learning-in-python-step-by-step/)
-- [Predict Quality Of Wine](https://medium.freecodecamp.org/using-machine-learning-to-predict-the-quality-of-wines-9e2e13d7480d)
-- [Solving A Fruits Classification Problem](https://towardsdatascience.com/solving-a-simple-classification-problem-with-python-fruits-lovers-edition-d20ab6b071d2)
-- [Learn Unsupervised Learning with Python](https://scikit-learn.org/stable/unsupervised_learning.html)
-- [Build Your Own Neural Net from Scratch in Python](https://towardsdatascience.com/how-to-build-your-own-neural-network-from-scratch-in-python-68998a08e4f6)
-- [Linear Regression in Python without sklearn](https://medium.com/we-are-orb/linear-regression-in-python-without-scikit-learn-50aef4b8d122)
-- [Multivariate Linear Regression without sklearn](https://medium.com/we-are-orb/multivariate-linear-regression-in-python-without-scikit-learn-7091b1d45905)
-- [Music Recommender using KNN](https://towardsdatascience.com/how-to-build-a-simple-song-recommender-296fcbc8c85)
-- Find Similar Quora Questions-
-  - [Using BOW, TFIDF and Xgboost](https://towardsdatascience.com/finding-similar-quora-questions-with-bow-tfidf-and-random-forest-c54ad88d1370)
-  - [Using Word2Vec and Xgboost](https://towardsdatascience.com/finding-similar-quora-questions-with-word2vec-and-xgboost-1a19ad272c0d)
-- [Detecting Fake News with Python and Machine Learning](https://data-flair.training/blogs/advanced-python-project-detecting-fake-news/)
-
-### OpenCV:
-
-- [Build A Document Scanner](https://www.pyimagesearch.com/2014/09/01/build-kick-ass-mobile-document-scanner-just-5-minutes/)
-- [Build A Face Detector using OpenCV and Deep Learning](https://www.pyimagesearch.com/2018/02/26/face-detection-with-opencv-and-deep-learning/)
-- [Build fastest custom object Detection system yusing YOLOv3(video playlist)](https://www.youtube.com/playlist?list=PLKHYJbyeQ1a0oGzgRXy-QwAN1tSV4XZxg)
-- [Build a Face Recognition System using OpenCV, Python and Deep Learning](https://www.pyimagesearch.com/2018/06/18/face-recognition-with-opencv-python-and-deep-learning/)
-- [Detect The Salient Features in an Image](https://www.pyimagesearch.com/2018/07/16/opencv-saliency-detection/)
-- [Build A Barcode Scanner](https://www.pyimagesearch.com/2018/05/21/an-opencv-barcode-and-qr-code-scanner-with-zbar/)
-- [Learn Face Clustering with Python](https://www.pyimagesearch.com/2018/07/09/face-clustering-with-python/)
-- [Object Tracking with Camshift](https://www.pyimagesearch.com/wp-content/uploads/2014/11/opencv_crash_course_camshift.pdf)
-- [Semantic Segmentation with OpenCV and Deep Learning](https://www.pyimagesearch.com/2018/09/03/semantic-segmentation-with-opencv-and-deep-learning/)
-- [Text Detection in Images and Videos](https://www.pyimagesearch.com/2018/08/20/opencv-text-detection-east-text-detector/)
-- [People Counter using OpenCV](https://www.pyimagesearch.com/2018/08/13/opencv-people-counter/)
-- [Tracking Multiple Objects with OpenCV](https://www.pyimagesearch.com/2018/08/06/tracking-multiple-objects-with-opencv/)
-- [Neural Style Transfer with OpenCV](https://www.pyimagesearch.com/2018/08/27/neural-style-transfer-with-opencv/)
-- [OpenCV OCR and Text Recognition](https://www.pyimagesearch.com/2018/09/17/opencv-ocr-and-text-recognition-with-tesseract/)
-- [Text Skew Correction Tutorial](https://www.pyimagesearch.com/2017/02/20/text-skew-correction-opencv-python/)
-- [Facial Landmark Detection Tutorial](https://www.pyimagesearch.com/2017/04/03/facial-landmarks-dlib-opencv-python/)
-- [Object Detection using Mask-R-CNN](https://www.learnopencv.com/deep-learning-based-object-detection-and-instance-segmentation-using-mask-r-cnn-in-opencv-python-c/)
-- [Automatic Target Detection Tutorial](https://www.pyimagesearch.com/2015/05/04/target-acquired-finding-targets-in-drone-and-quadcopter-video-streams-using-python-and-opencv/)
-- [EigenFaces using OpenCV](https://www.learnopencv.com/eigenface-using-opencv-c-python/)
-- [Faster(5-point) Facial Landmark Detection Tutorial](https://www.pyimagesearch.com/2018/04/02/faster-facial-landmark-detector-with-dlib/)
-- [Hand Keypoint Detection](https://www.learnopencv.com/hand-keypoint-detection-using-deep-learning-and-opencv/)
-- Dlib Correlation Object Tracking -
-  - [Single Object Tracker](https://www.pyimagesearch.com/2018/10/22/object-tracking-with-dlib/)
-  - [Mutiple Object Tracker](https://www.pyimagesearch.com/2018/10/29/multi-object-tracking-with-dlib/)
-- [Image Stitching with OpenCV and Python](https://www.pyimagesearch.com/2018/12/17/image-stitching-with-opencv-and-python/)
-- [Instance Segmentation with OpenCV](https://www.pyimagesearch.com/2018/11/26/instance-segmentation-with-opencv/)
-- [Face mask detector](https://www.pyimagesearch.com/2020/05/04/covid-19-face-mask-detector-with-opencv-keras-tensorflow-and-deep-learning/)
-
-### Deep Learning:
-
-- [Using Convolutional Neural Nets to Detect Facial Keypoints](http://danielnouri.org/notes/2014/12/17/using-convolutional-neural-nets-to-detect-facial-keypoints-tutorial/)
-- [Generate an Average Face using Python and OpenCV](https://www.learnopencv.com/average-face-opencv-c-python-tutorial/)
-- [Break A Captcha System using CNNs](https://medium.com/@ageitgey/how-to-break-a-captcha-system-in-15-minutes-with-machine-learning-dbebb035a710)
-- [Use pre-trained Inception model to provide image predictions](https://medium.com/google-cloud/keras-inception-v3-on-google-compute-engine-a54918b0058)
-- [Create your first CNN](https://hackernoon.com/deep-learning-cnns-in-tensorflow-with-gpus-cba6efe0acc2)
-- [Build A Facial Recognition Pipeline](https://hackernoon.com/building-a-facial-recognition-pipeline-with-deep-learning-in-tensorflow-66e7645015b8)
-- [Build An Image Caption Generator](https://medium.freecodecamp.org/building-an-image-caption-generator-with-deep-learning-in-tensorflow-a142722e9b1f)
-- [Make your Own Face Recognition System](https://medium.freecodecamp.org/making-your-own-face-recognition-system-29a8e728107c)
-- [Train a Language Detection AI in 20 minutes](https://towardsdatascience.com/how-i-trained-a-language-detection-ai-in-20-minutes-with-a-97-accuracy-fdeca0fb7724)
-- [Object Detection With Neural Networks](https://towardsdatascience.com/object-detection-with-neural-networks-a4e2c46b4491)
-- Learn Twitter Sentiment Analysis -
-  - [Part I - Data Cleaning](https://towardsdatascience.com/another-twitter-sentiment-analysis-bb5b01ebad90)
-  - [Part II - EDA, Data Visualisation](https://towardsdatascience.com/another-twitter-sentiment-analysis-with-python-part-2-333514854913)
-  - [Part III - Zipf's Law, Data Visualisation](https://towardsdatascience.com/another-twitter-sentiment-analysis-with-python-part-3-zipfs-law-data-visualisation-fc9eadda71e7)
-  - [Part IV - Feature Extraction(count vectoriser)](https://towardsdatascience.com/another-twitter-sentiment-analysis-with-python-part-4-count-vectorizer-b3f4944e51b5)
-  - [Part V - Feature Extraction(Tfidf vectoriser)](https://towardsdatascience.com/another-twitter-sentiment-analysis-with-python-part-5-50b4e87d9bdd)
-  - [Part VI - Doc2Vec](https://towardsdatascience.com/another-twitter-sentiment-analysis-with-python-part-6-doc2vec-603f11832504)
-  - [Part VII - Phrase Modeling + Doc2Vec](https://towardsdatascience.com/another-twitter-sentiment-analysis-with-python-part-7-phrase-modeling-doc2vec-592a8a996867)
-  - [Part VIII - Dimensionality Reduction](https://towardsdatascience.com/another-twitter-sentiment-analysis-with-python-part-8-dimensionality-reduction-chi2-pca-c6d06fb3fcf3)
-  - [Part IX - Neural Nets with Tfdif vectors](https://towardsdatascience.com/another-twitter-sentiment-analysis-with-python-part-9-neural-networks-with-tfidf-vectors-using-d0b4af6be6d7)
-  - [Part X - Neural Nets with word2vec/doc2vec](https://towardsdatascience.com/another-twitter-sentiment-analysis-with-python-part-10-neural-network-with-a6441269aa3c)
-  - [Part XI - CNN with Word2Vec](https://towardsdatascience.com/another-twitter-sentiment-analysis-with-python-part-11-cnn-word2vec-41f5e28eda74)
-- [Use Transfer Learning for custom image classification](https://becominghuman.ai/transfer-learning-retraining-inception-v3-for-custom-image-classification-2820f653c557)
-- [Learn to Code a simple Neural Network in 11 lines of Python](https://iamtrask.github.io/2015/07/12/basic-python-network/)
-- [Build a Neural Network using Gradient Descent Approach](https://iamtrask.github.io/2015/07/27/python-network-part2/)
-- [Train a Keras Model To Generate Colors](https://heartbeat.fritz.ai/how-to-train-a-keras-model-to-generate-colors-3bc79e54971b)
-- [Get Started with Keras on a Custom Dataset](https://www.pyimagesearch.com/2018/09/10/keras-tutorial-how-to-get-started-with-keras-deep-learning-and-python/)
-- [Use EigenFaces and FisherFaces on Faces94 dataset](https://nicholastsmith.wordpress.com/2016/02/18/eigenfaces-versus-fisherfaces-on-the-faces94-database-with-scikit-learn/)
-- [Kaggle MNIST Digit Recognizer Tutorial](https://medium.com/@lvarruda/how-to-get-top-2-position-on-kaggles-mnist-digit-recognizer-48185d80a2d4)
-- [Fashion MNIST tutorial with tf.keras](https://medium.com/tensorflow/hello-deep-learning-fashion-mnist-with-keras-50fcff8cd74a)
-- [CNN using Keras to automatically classify root health](https://www.pyimagesearch.com/2018/10/15/deep-learning-hydroponics-and-medical-marijuana/)
-- [Keras vs Tensorflow](https://www.pyimagesearch.com/2018/10/08/keras-vs-tensorflow-which-one-is-better-and-which-one-should-i-learn/)
-- [Deep Learning and Medical Image Analysis for Malaria Detection](https://www.pyimagesearch.com/2018/12/03/deep-learning-and-medical-image-analysis-with-keras/)
-- [Transfer Learning for Image Classification using Keras](https://towardsdatascience.com/transfer-learning-for-image-classification-using-keras-c47ccf09c8c8)
-- [Code a Smile Classifier using CNNS in Python](https://github.com/kylemcdonald/SmileCNN)
-- [Natural Language Processing using scikit-learn](https://towardsdatascience.com/natural-language-processing-count-vectorization-with-scikit-learn-e7804269bb5e)
-- [Code a Taylor Swift Lyrics Generator](https://towardsdatascience.com/ai-generates-taylor-swifts-song-lyrics-6fd92a03ef7e)
-- [Mask detection using PyTorch Lightning](https://towardsdatascience.com/how-i-built-a-face-mask-detector-for-covid-19-using-pytorch-lightning-67eb3752fd61)
-
-### Miscellaneous:
-
-- [Build a Simple Interpreter](https://ruslanspivak.com/lsbasi-part1/)
-- [Build a Simple Blockchain in Python](https://hackernoon.com/learn-blockchains-by-building-one-117428612f46)
-- [Write a NoSQL Database in Python](https://jeffknupp.com/blog/2014/09/01/what-is-a-nosql-database-learn-by-writing-one-in-python/)
-- [Building a Gas Pump Scanner with OpenCV/Python/iOS](https://hackernoon.com/building-a-gas-pump-scanner-with-opencv-python-ios-116fe6c9ae8b)
-- [Build a Distributed Streaming System with Python and Kafka](https://codequs.com/p/S14jQ5UyG/build-a-distributed-streaming-system-with-apache-kafka-and-python)
-- [Writing a basic x86-64 JIT compiler from scratch in stock Python](https://csl.name/post/python-jit/)
-- Making a low level (Linux) debugger
-  - [Part 1](https://blog.asrpo.com/making_a_low_level_debugger)
-  - [Part 2: C](https://blog.asrpo.com/making_a_low_level_debugger_part_2)
-- Implementing a Search Engine
-  - [Part 1](http://www.ardendertat.com/2011/05/30/how-to-implement-a-search-engine-part-1-create-index/)
-  - [Part 2](http://www.ardendertat.com/2011/05/31/how-to-implement-a-search-engine-part-2-query-index/)
-  - [Part 3](http://www.ardendertat.com/2011/07/17/how-to-implement-a-search-engine-part-3-ranking-tf-idf/)
-- [Build the Game of Life](https://robertheaton.com/2018/07/20/project-2-game-of-life/)
-- [Create terminal ASCII art](https://robertheaton.com/2018/06/12/programming-projects-for-advanced-beginners-ascii-art/)
-- [Write a Tic-Tac-Toe AI](https://robertheaton.com/2018/10/09/programming-projects-for-advanced-beginners-3-a/)
-- [Create photomosaic art](https://robertheaton.com/2018/11/03/programming-project-4-photomosaics/)
-- [Build the game "Snake" in the terminal](https://robertheaton.com/2018/12/02/programming-project-5-snake/)
-- [Write yourself a Git](https://wyag.thb.lt/)
-- [A Python implementation of a Python bytecode runner](https://www.aosabook.org/en/500L/a-python-interpreter-written-in-python.html)
-- [Create a Voice assistant using Python](https://www.geeksforgeeks.org/voice-assistant-using-python/)
-
-## Go:
-
-- [Create a Real Time Chat App with Golang, Angular 2, and WebSocket](https://www.thepolyglotdeveloper.com/2016/12/create-real-time-chat-app-golang-angular-2-websockets/)
-- [Building Go Web Applications and Microservices Using Gin](https://semaphoreci.com/community/tutorials/building-go-web-applications-and-microservices-using-gin)
-- [How to Use Godog for Behavior-driven Development in Go](https://semaphoreci.com/community/tutorials/how-to-use-godog-for-behavior-driven-development-in-go)
-- Building Blockchain in Go
-  - [Part 1: Basic Prototype](https://jeiwan.net/posts/building-blockchain-in-go-part-1/)
-  - [Part 2: Proof of Work](https://jeiwan.net/posts/building-blockchain-in-go-part-2/)
-  - [Part 3: Persistence and CLI](https://jeiwan.net/posts/building-blockchain-in-go-part-3/)
-  - [Part 4: Transactions 1](https://jeiwan.net/posts/building-blockchain-in-go-part-4/)
-  - [Part 5: Address](https://jeiwan.net/posts/building-blockchain-in-go-part-5/)
-  - [Part 6: Transactions 2](https://jeiwan.net/posts/building-blockchain-in-go-part-6/)
-  - [Part 7: Network](https://jeiwan.net/posts/building-blockchain-in-go-part-7/)
-- [Building a container from scratch in Go - Liz Rice (Microscaling Systems)(video)](https://www.youtube.com/watch?v=8fi7uSYlOdc)
-- [Build Web Application with GoLang](https://astaxie.gitbooks.io/build-web-application-with-golang/content/en/)
-- Building a Chat Application in Go with ReactJS
-  - [Part 1: Initial Setup](https://tutorialedge.net/projects/chat-system-in-go-and-react/part-1-initial-setup/)
-  - [Part 2: Simple Communication](https://tutorialedge.net/projects/chat-system-in-go-and-react/part-2-simple-communication/)
-  - [Part 3: Designing our Frontend](https://tutorialedge.net/projects/chat-system-in-go-and-react/part-3-designing-our-frontend/)
-  - [Part 4: Handling Multiple Clients](https://tutorialedge.net/projects/chat-system-in-go-and-react/part-4-handling-multiple-clients/)
-  - [Part 5: Improving the Frontend](https://tutorialedge.net/projects/chat-system-in-go-and-react/part-5-improved-frontend/)
-  - [Part 6: Dockerizing your Backend](https://tutorialedge.net/projects/chat-system-in-go-and-react/part-6-dockerizing-your-backend/)
-- [Go WebAssembly Tutorial - Building a Calculator Tutorial](https://tutorialedge.net/golang/go-webassembly-tutorial/)
-- REST Servers in Go
-  - [Part 1 - standard library](https://eli.thegreenplace.net/2021/rest-servers-in-go-part-1-standard-library/)
-  - [Part 2 - using a router package](https://eli.thegreenplace.net/2021/rest-servers-in-go-part-2-using-a-router-package/)
-  - [Part 3 - using a web framework](https://eli.thegreenplace.net/2021/rest-servers-in-go-part-3-using-a-web-framework/)
-  - [Part 4 - using OpenAPI and Swagger](https://eli.thegreenplace.net/2021/rest-servers-in-go-part-4-using-openapi-and-swagger/)
-  - [Part 5 - middleware](https://eli.thegreenplace.net/2021/rest-servers-in-go-part-5-middleware/)
-  - [Part 6 - authentication](https://eli.thegreenplace.net/2021/rest-servers-in-go-part-6-authentication/)
-  - [Part 7 - GraphQL](https://eli.thegreenplace.net/2021/rest-servers-in-go-part-7-graphql/)
-- Let's build a URL shortener in Go - with Gin & Redis
-  - [Part 1 - Project setup](https://www.eddywm.com/lets-build-a-url-shortener-in-go/)
-  - [Part 2 - Storage Layer](https://www.eddywm.com/lets-build-a-url-shortener-in-go-with-redis-part-2-storage-layer/)
-  - [Part 3 - Short Link Generator](https://www.eddywm.com/lets-build-a-url-shortener-in-go-part-3-short-link-generation/)
-  - [Part 4 - Forwarding](https://www.eddywm.com/lets-build-a-url-shortener-in-go-part-iv-forwarding/)
-- [Building a TCP Chat in Go(video)](https://www.youtube.com/watch?v=Sphme0BqJiY)
-- [Building a BitTorrent client from the ground up in Go](https://blog.jse.li/posts/torrent/)
-- [REST API masterclass with Go, PostgreSQL and Docker(video playlist)`in progress`](https://www.youtube.com/watch?v=rx6CPDK_5mU&list=PLy_6D98if3ULEtXtNSY_2qN21VCKgoQAE)
-
-## PHP:
-
-- [How To Build A Blog With Laravel](https://www.youtube.com/playlist?list=PLwAKR305CRO-Q90J---jXVzbOd4CDRbVx) (video)
-- [Make Your Own Blog (in Pure PHP)](http://ilovephp.jondh.me.uk/en/tutorial/make-your-own-blog)
-- [Build A Real Estate Website Example with SilverStripe](https://www.silverstripe.org/learn/lessons/)
-- [Building Realtime Chat App with Laravel 5.4 and VueJS](https://www.youtube.com/playlist?list=PLXsbBbd36_uVjOFH_P25__XAyGsohXWlv) (video)
-- [Build A Social Network: Laravel 5 - Youtube](https://www.youtube.com/playlist?list=PLfdtiltiRHWGGxaR6uFtwZnnbcXqyq8JD) (video)
-- Build a full-featured multi-tenant app with Laravel
-  - [Part 0: Introduction](https://medium.com/@ashokgelal/writing-a-full-featured-multi-tenant-laravel-app-from-scratch-a0e1a7350d9d)
-  - [Part 1: Setup](https://medium.com/@ashokgelal/a-full-featured-multi-tenant-app-with-laravel-part-1-4049a3cc229d)
-  - [Part 2: Roles and Permissinos](https://medium.com/@ashokgelal/a-full-featured-multi-tenant-app-with-laravel-part-2-roles-and-permissions-d9a5bfe5d525)
-  - [Part 3: Invitation](https://medium.com/@ashokgelal/a-full-featured-multi-tenant-app-with-laravel-part-3-invitation-c982dca55eb9)
-  - [Part 4: Authentication](https://medium.com/@ashokgelal/a-full-featured-multi-tenant-app-with-laravel-part-4-tenancy-aware-authentication-e0ee37270bc8)
-  - [Part 5: Testing](https://medium.com/@ashokgelal/a-full-featured-multi-tenant-app-with-laravel-part-2-unit-tests-96d6dfbf0617)
-  - [Part 6: User Profile](https://medium.com/@ashokgelal/a-full-featured-multi-tenant-app-with-laravel-part-5-user-profile-5c3d0c655f3a)
-  - [Part 7: Deployment](https://medium.com/@ashokgelal/a-full-featured-multi-tenant-app-with-laravel-part-7-deployment-40bb3c895627)
-- [Build a Laravel CRUD Application From Scratch](https://www.codewall.co.uk/laravel-crud-demo-with-resource-controller-tutorial/)
-
-## OCaml:
-
-- [Implement a Language with LLVM in OCaml](https://llvm.org/docs/tutorial/#kaleidoscope-implementing-a-language-with-llvm-in-objective-caml)
-- [Writing a Game Boy Emulator in OCaml](https://linoscope.github.io/writing-a-game-boy-emulator-in-ocaml/)
-
-## Ruby:
-
-- [Build a Network Stack with Ruby](https://medium.com/geckoboard-under-the-hood/how-to-build-a-network-stack-in-ruby-f73aeb1b661b)
-- Build your own Redis
-  - [Part 0: Introduction](https://rohitpaulk.com/articles/redis-0)
-  - [Part 1: Barebones TCP Server](https://rohitpaulk.com/articles/redis-1)
-  - [Part 2: PING <-> PONG](https://rohitpaulk.com/articles/redis-2)
-  - [Part 3: Concurrent Clients](https://rohitpaulk.com/articles/redis-3)
-  - [Part 4: ECHO](https://rohitpaulk.com/articles/redis-4)
-- [Rebuilding Git in Ruby](https://thoughtbot.com/blog/rebuilding-git-in-ruby)
-
-### Ruby on Rails:
-
-- [The Ruby on Rails Tutorial](https://www.railstutorial.org/book)
-- [Build Instagram From Scratch with Ruby on Rails](https://www.dropbox.com/s/9vq430e9s3q7pu8/Let%27s%20Build%20Instagram%20with%20Ruby%20on%20Rails%20-%20Free%20Edition.pdf?dl=0)
-- [Build a Social Network using Rails](https://medium.com/rails-ember-beyond/how-to-build-a-social-network-using-rails-eb31da569233)
-- [How To Build a Ruby on Rails Application](https://www.digitalocean.com/community/tutorials/how-to-build-a-ruby-on-rails-application)
-
-## Haskell:
-
-- [Write You a Haskell - Build a modern functional compiler](http://dev.stephendiehl.com/fun/)
-- [Write Yourself a Scheme in 48 hours](https://en.wikibooks.org/wiki/Write_Yourself_a_Scheme_in_48_Hours)
-- [Write You A Scheme, Version 2](https://github.com/write-you-a-scheme-v2/scheme)
-- [Roll Your Own IRC Bot](https://wiki.haskell.org/Roll_your_own_IRC_bot)
-- [Making Movie Monad](https://lettier.github.io/posts/2016-08-15-making-movie-monad.html)
-- [Making a Website with Haskell **(outdated)**](http://adit.io/posts/2013-04-15-making-a-website-with-haskell.html)
-
-## R:
-
-- [Build Web Apps with Shiny](http://shiny.rstudio.com/tutorial/)
-- [Build A Cryptocurrency Bot](https://towardsdatascience.com/build-a-cryptocurrency-trading-bot-with-r-1445c429e1b1)
-- [Learn Associate Rule Mining in R](https://towardsdatascience.com/association-rule-mining-in-r-ddf2d044ae50)
-
-## Rust:
-
-- A Simple Web App in Rust
-  - [Part 1](http://joelmccracken.github.io/entries/a-simple-web-app-in-rust-pt-1/)
-  - [Part 2a](http://joelmccracken.github.io/entries/a-simple-web-app-in-rust-pt-2a/)
-  - [Part 2b](http://joelmccracken.github.io/entries/a-simple-web-app-in-rust-pt-2b/)
-- [Write an OS in pure Rust](https://os.phil-opp.com/)
-- [Build a browser engine in Rust](https://limpet.net/mbrubeck/2014/08/08/toy-layout-engine-1.html)
-- [Write a Microservice in Rust](http://www.goldsborough.me/rust/web/tutorial/2018/01/20/17-01-11-writing_a_microservice_in_rust/)
-- [Learning Rust with Too Many Linked Lists](http://cglab.ca/~abeinges/blah/too-many-lists/book/README.html)
-- Rust in Detail: Writing Scalable Chat Service from Scratch
-  - [Part 1: Implementing WebSocket. Introduction.](https://nbaksalyar.github.io/2015/07/10/writing-chat-in-rust.html)
-  - [Part 2: Sending and Receiving Messages](https://nbaksalyar.github.io/2015/11/09/rust-in-detail-2.html)
-- [Writing a Rust Roguelike for the Desktop and the Web](https://aimlesslygoingforward.com/blog/2019/02/09/writing-a-rust-roguelike-for-the-desktop-and-the-web/)
-- [Single Page Applications using Rust](http://www.sheshbabu.com/posts/rust-wasm-yew-single-page-application/)
-- [Writing NES Emulator in Rust](https://bugzmanov.github.io/nes_ebook/)
-- Create a simulation of evolution using neural network and genetic algorithm, and compile the application to WebAssembly
-  - [Part 1](https://pwy.io/en/posts/learning-to-fly-pt1/)
-  - [Part 2](https://pwy.io/en/posts/learning-to-fly-pt2/)
-  - [Part 3](https://pwy.io/en/posts/learning-to-fly-pt3/)
-  - [Part 4](https://pwy.io/en/posts/learning-to-fly-pt4/)
-
-## Scala:
-
-- [Simple actor-based blockchain](https://www.freecodecamp.org/news/how-to-build-a-simple-actor-based-blockchain-aac1e996c177/)
-- [No Magic: Regular Expressions](https://rcoh.svbtle.com/no-magic-regular-expressions)
-
-## Swift:
-
-- [Hacking with Swift - Learn Swift by doing 39 projects](https://www.hackingwithswift.com/read)
-- [Retro first-person shooter from scratch](https://github.com/nicklockwood/RetroRampage)
-
-## Additional Resources
-
-- [React Redux Links](https://github.com/markerikson/react-redux-links)
-- [Udemy.com](https://www.udemy.com/)
-- [Full Stack Python](https://www.fullstackpython.com/)
-- [Node School](https://nodeschool.io/)
-- [ScotchIO](https://scotch.io/)
-- [Exercism](http://www.exercism.io/)
-- [Egghead.io](http://www.egghead.io/)
-- [Michael Herman's Blog](http://mherman.org/)
-- [Thinkster.io](http://thinkster.io)
-- [Enlight](https://enlight.nyc/)
-- [Hack Club Workshops](https://hackclub.com/workshops/)
-- [CodeCrafters](https://codecrafters.io/)
+<div class="Box-sc-g0xbh4-0 bJMeLZ js-snippet-clipboard-copy-unpositioned" data-hpc="true"><article class="markdown-body entry-content container-lg" itemprop="text"><div class="markdown-heading" dir="auto"><h1 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">基于项目的学习</font></font></h1><a id="user-content-project-based-learning" class="anchor" aria-label="永久链接：基于项目的学习" href="#project-based-learning"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><a href="https://gitter.im/practical-tutorials/community?utm_source=badge&amp;utm_medium=badge&amp;utm_campaign=pr-badge" rel="nofollow"><img src="https://camo.githubusercontent.com/6b81981709fa28924b66d5c86db9c5259a6e701be3563f5d24b0b2d708b82894/68747470733a2f2f6261646765732e6769747465722e696d2f70726163746963616c2d7475746f7269616c732f636f6d6d756e6974792e737667" alt="吉特" data-canonical-src="https://badges.gitter.im/practical-tutorials/community.svg" style="max-width: 100%;"></a></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">一系列编程教程，帮助有志于成为软件开发人员的人学习如何从头开始构建应用程序。这些教程分为不同的主要编程语言。教程可能涉及多种技术和语言。</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">要开始使用，只需 fork 此 repo。请参阅</font></font><a href="/practical-tutorials/project-based-learning/blob/master/CONTRIBUTING.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">CONTRIBUTING.md</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">了解贡献指南。</font></font></p>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">目录：</font></font></h2><a id="user-content-table-of-contents" class="anchor" aria-label="固定链接：目录：" href="#table-of-contents"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li><a href="#c"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">C＃</font></font></a></li>
+<li><a href="#cc"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">C/C++</font></font></a></li>
+<li><a href="#clojure"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Clojure</font></font></a></li>
+<li><a href="#dart"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">镖</font></font></a></li>
+<li><a href="#elixir"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">灵丹妙药</font></font></a></li>
+<li><a href="#erlang"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Erlang</font></font></a></li>
+<li><a href="#f"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">F＃</font></font></a></li>
+<li><a href="#go"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">去</font></font></a></li>
+<li><a href="#haskell"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">哈斯克尔</font></font></a></li>
+<li><a href="#html-and-css"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">HTML/CSS</font></font></a></li>
+<li><a href="#java"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Java</font></font></a></li>
+<li><a href="#javascript"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">JavaScript</font></font></a></li>
+<li><a href="#kotlin"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">科特林</font></font></a></li>
+<li><a href="#lua"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Lua</font></font></a></li>
+<li><a href="#ocaml"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">OCaml</font></font></a></li>
+<li><a href="#php"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">PHP</font></font></a></li>
+<li><a href="#python"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Python</font></font></a></li>
+<li><a href="#r"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">R</font></font></a></li>
+<li><a href="#ruby"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">红宝石</font></font></a></li>
+<li><a href="#rust"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">锈</font></font></a></li>
+<li><a href="#scala"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Scala</font></font></a></li>
+<li><a href="#swift"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">迅速</font></font></a></li>
+<li><a href="#additional-resources"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">其他资源</font></font></a></li>
+</ul>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">C/C++：</font></font></h2><a id="user-content-cc" class="anchor" aria-label="固定链接：C/C++：" href="#cc"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li><a href="http://www.craftinginterpreters.com/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">构建解释器</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">（第 14 章用 C 语言编写）</font></font></li>
+<li><a href="https://arjunsreedharan.org/post/148675821737/memory-allocators-101-write-a-simple-memory" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">内存分配器 101 - 编写一个简单的内存分配器</font></font></a></li>
+<li><a href="https://brennan.io/2015/01/16/write-a-shell-in-c/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">用 C 语言编写 Shell</font></font></a></li>
+<li><a href="https://www.cs.nmsu.edu/~pfeiffer/fuse-tutorial/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">编写 FUSE 文件系统</font></font></a></li>
+<li><a href="http://viewsourcecode.org/snaptoken/kilo/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">构建您自己的文本编辑器</font></font></a></li>
+<li><a href="http://www.buildyourownlisp.com/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">构建你自己的 Lisp</font></font></a></li>
+<li><a href="https://nesdoug.com/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">如何用 C 语言编写 NES 游戏</font></font></a></li>
+<li><a href="https://github.com/tuhdo/os01"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">从头编写操作系统</font></font></a></li>
+<li><a href="https://github.com/cfenollosa/os-tutorial"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">如何从头开始创建操作系统</font></font></a></li>
+<li><a href="https://austinmorlan.com/posts/chip8_emulator/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">构建 CHIP-8 模拟器</font></font></a></li>
+<li><a href="http://lazyfoo.net/tutorials/SDL/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用 C++ 和 SDL 开始游戏编程</font></font></a></li>
+<li><a href="http://codecapsule.com/2012/11/07/ikvs-implementing-a-key-value-store-table-of-contents/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">实现键值存储</font></font></a></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">微型 3D 图形项目
+</font></font><ul dir="auto">
+<li><a href="https://github.com/ssloy/tinyrenderer/wiki"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Tiny Renderer 或 OpenGL 的工作原理：500 行代码即可实现软件渲染</font></font></a></li>
+<li><a href="https://github.com/ssloy/tinyraytracer/wiki"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">仅用 256 行 C++ 代码即可理解光线追踪</font></font></a></li>
+<li><a href="https://github.com/ssloy/tinykaboom/wiki"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">KABOOM！仅用 180 行 C++ 代码</font></font></a></li>
+<li><a href="https://github.com/ssloy/tinyraycaster/wiki"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">486 行 C++：一个周末就能实现老式 FPS</font></font></a></li>
+</ul>
+</li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">用 C++ 编写最小的 x86-64 JIT 编译器
+</font></font><ul dir="auto">
+<li><a href="https://solarianprogrammer.com/2018/01/10/writing-minimal-x86-64-jit-compiler-cpp/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">第1部分</font></font></a></li>
+<li><a href="https://solarianprogrammer.com/2018/01/12/writing-minimal-x86-64-jit-compiler-cpp-part-2/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">第2部分</font></font></a></li>
+</ul>
+</li>
+<li><a href="http://howistart.org/posts/cpp/1/index.html" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">为 C++ 构建实时代码重载库</font></font></a></li>
+<li><a href="https://github.com/jamesroutley/write-a-hash-table"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">用 C 语言编写哈希表</font></font></a></li>
+<li><a href="https://cstack.github.io/db_tutorial/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">让我们建立一个简单的数据库</font></font></a></li>
+<li><a href="http://arjunsreedharan.org/post/82710718100/kernel-101-lets-write-a-kernel" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">让我们编写一个内核</font></font></a></li>
+<li><a href="http://3zanders.co.uk/2017/10/13/writing-a-bootloader/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">用 C 语言编写引导加载程序</font></font></a></li>
+<li><a href="https://blog.lizzie.io/linux-containers-in-500-loc.html" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">500 行代码即可实现 Linux 容器</font></font></a></li>
+<li><a href="https://justinmeiners.github.io/lc3-vm/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">编写自己的虚拟机</font></font></a></li>
+<li><a href="https://david942j.blogspot.com/2018/10/note-learning-kvm-implement-your-own.html" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">学习 KVM - 实现你自己的 Linux 内核</font></font></a></li>
+<li><a href="https://build-your-own.org/redis/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用 C/C++ 构建自己的 Redis</font></font></a></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">编写一个 C 编译器
+</font></font><ul dir="auto">
+<li><a href="https://norasandler.com/2017/11/29/Write-a-Compiler.html" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">第一部分：整数、词法分析和代码生成</font></font></a></li>
+<li><a href="https://norasandler.com/2017/12/05/Write-a-Compiler-2.html" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">第二部分：一元运算符</font></font></a></li>
+<li><a href="https://norasandler.com/2017/12/15/Write-a-Compiler-3.html" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">第三部分：二元运算符</font></font></a></li>
+<li><a href="https://norasandler.com/2017/12/28/Write-a-Compiler-4.html" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">第四部分：更多二元运算符</font></font></a></li>
+<li><a href="https://norasandler.com/2018/01/08/Write-a-Compiler-5.html" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">第五部分：局部变量</font></font></a></li>
+<li><a href="https://norasandler.com/2018/02/25/Write-a-Compiler-6.html" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">第六部分：条件语句</font></font></a></li>
+<li><a href="https://norasandler.com/2018/03/14/Write-a-Compiler-7.html" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">第七部分：复合语句</font></font></a></li>
+<li><a href="https://norasandler.com/2018/04/10/Write-a-Compiler-8.html" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">第 8 部分：循环</font></font></a></li>
+<li><a href="https://norasandler.com/2018/06/27/Write-a-Compiler-9.html" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">第 9 部分：函数</font></font></a></li>
+<li><a href="https://norasandler.com/2019/02/18/Write-a-Compiler-10.html" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">第 10 部分：全局变量</font></font></a></li>
+</ul>
+</li>
+<li><a href="https://llvm.org/docs/tutorial/#kaleidoscope-implementing-a-language-with-llvm" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用 LLVM 实现语言</font></font></a></li>
+<li><a href="https://jguegant.github.io//jguegant.github.io/blogs/tech/meta-crush-saga.html" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Meta Crush Saga：一款 C++17 编译时游戏</font></font></a></li>
+<li><a href="https://gist.github.com/nadavrot/5b35d44e8ba3dd718e595e40184d03f0"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">高性能矩阵乘法</font></font></a></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">从零开始的太空侵略者
+</font></font><ul dir="auto">
+<li><a href="http://nicktasios.nl/posts/space-invaders-from-scratch-part-1.html" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">第1部分</font></font></a></li>
+<li><a href="http://nicktasios.nl/posts/space-invaders-from-scratch-part-2.html" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">第2部分</font></font></a></li>
+<li><a href="http://nicktasios.nl/posts/space-invaders-from-scratch-part-3.html" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">第 3 部分</font></font></a></li>
+<li><a href="http://nicktasios.nl/posts/space-invaders-from-scratch-part-4.html" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">第 4 部分</font></font></a></li>
+<li><a href="http://nicktasios.nl/posts/space-invaders-from-scratch-part-5.html" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">第 5 部分</font></font></a></li>
+</ul>
+</li>
+<li><a href="http://javilop.com/gamedev/tetris-tutorial-in-c-platform-independent-focused-in-game-logic-for-beginners/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">俄罗斯方块教程（C++ 平台独立版）</font></font></a></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">编写 Linux 调试器
+</font></font><ul dir="auto">
+<li><a href="https://blog.tartanllama.xyz/writing-a-linux-debugger-setup/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">第 1 部分：设置</font></font></a></li>
+<li><a href="https://blog.tartanllama.xyz/writing-a-linux-debugger-breakpoints/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">第 2 部分：断点</font></font></a></li>
+<li><a href="https://blog.tartanllama.xyz/writing-a-linux-debugger-registers/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">第 3 部分：寄存器和内存</font></font></a></li>
+<li><a href="https://blog.tartanllama.xyz/writing-a-linux-debugger-elf-dwarf/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">第四部分：精灵和矮人</font></font></a></li>
+<li><a href="https://blog.tartanllama.xyz/writing-a-linux-debugger-source-signal/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">第五部分：源和信号</font></font></a></li>
+<li><a href="https://blog.tartanllama.xyz/writing-a-linux-debugger-dwarf-step/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">第 6 部分：源码级步进</font></font></a></li>
+<li><a href="https://blog.tartanllama.xyz/writing-a-linux-debugger-source-break/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">第 7 部分：源代码级断点</font></font></a></li>
+<li><a href="https://blog.tartanllama.xyz/writing-a-linux-debugger-unwinding/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">第 8 部分：堆栈展开</font></font></a></li>
+<li><a href="https://blog.tartanllama.xyz/writing-a-linux-debugger-variables/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">第 9 部分：处理变量</font></font></a></li>
+<li><a href="https://blog.tartanllama.xyz/writing-a-linux-debugger-advanced-topics/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">第 10 部分：高级主题</font></font></a></li>
+</ul>
+</li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">让我们写一个编译器
+</font></font><ul dir="auto">
+<li><a href="https://briancallahan.net/blog/20210814.html" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">第 1 部分：介绍、选择语言并做一些规划</font></font></a></li>
+<li><a href="https://briancallahan.net/blog/20210815.html" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">第二部分：词法分析器</font></font></a></li>
+<li><a href="https://briancallahan.net/blog/20210816.html" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">第 3 部分：解析器</font></font></a></li>
+<li><a href="https://briancallahan.net/blog/20210817.html" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">第 4 部分：测试</font></font></a></li>
+<li><a href="https://briancallahan.net/blog/20210818.html" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">第 5 部分：代码生成器</font></font></a></li>
+<li><a href="https://briancallahan.net/blog/20210819.html" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">第六部分：输入和输出</font></font></a></li>
+<li><a href="https://briancallahan.net/blog/20210822.html" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">第 7 部分：数组</font></font></a></li>
+<li><a href="https://briancallahan.net/blog/20210826.html" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">第 8 部分：字符串、前向引用和结论</font></font></a></li>
+</ul>
+</li>
+</ul>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">网络编程</font></font></h3><a id="user-content-network-programming" class="anchor" aria-label="永久链接：网络编程" href="#network-programming"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">编写一个 TCP/IP 协议栈</font></font></p>
+<ul dir="auto">
+<li><a href="http://www.saminiir.com/lets-code-tcp-ip-stack-1-ethernet-arp/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">第一部分：以太网和ARP</font></font></a></li>
+<li><a href="http://www.saminiir.com/lets-code-tcp-ip-stack-2-ipv4-icmpv4/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">第 2 部分：IPv4 和 ICMPv4</font></font></a></li>
+<li><a href="http://www.saminiir.com/lets-code-tcp-ip-stack-3-tcp-handshake/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">第 3 部分：TCP 基础和握手</font></font></a></li>
+<li><a href="http://www.saminiir.com/lets-code-tcp-ip-stack-4-tcp-data-flow-socket-api/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">第 4 部分：TCP 数据流和套接字 API</font></font></a></li>
+<li><a href="http://www.saminiir.com/lets-code-tcp-ip-stack-5-tcp-retransmission/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">第五部分：TCP 重传</font></font></a></li>
+</ul>
+</li>
+<li>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">编程并发服务器</font></font></p>
+<ul dir="auto">
+<li><a href="https://eli.thegreenplace.net/2017/concurrent-servers-part-1-introduction/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">第 1 部分 - 简介</font></font></a></li>
+<li><a href="https://eli.thegreenplace.net/2017/concurrent-servers-part-2-threads/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">第 2 部分 - 线程</font></font></a></li>
+<li><a href="https://eli.thegreenplace.net/2017/concurrent-servers-part-3-event-driven/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">第 3 部分 - 事件驱动</font></font></a></li>
+<li><a href="https://eli.thegreenplace.net/2017/concurrent-servers-part-4-libuv/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">第 4 部分 - libuv</font></font></a></li>
+<li><a href="https://eli.thegreenplace.net/2017/concurrent-servers-part-5-redis-case-study/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">第 5 部分 - Redis 案例研究</font></font></a></li>
+<li><a href="https://eli.thegreenplace.net/2018/concurrent-servers-part-6-callbacks-promises-and-asyncawait/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">第六部分 - 回调、Promises 和 async/await</font></font></a></li>
+</ul>
+</li>
+<li>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">从零开始的 MQTT Broker</font></font></p>
+<ul dir="auto">
+<li><a href="https://codepr.github.io/posts/sol-mqtt-broker" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">第 1 部分 - 协议</font></font></a></li>
+<li><a href="https://codepr.github.io/posts/sol-mqtt-broker-p2" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">第 2 部分 - 网络</font></font></a></li>
+<li><a href="https://codepr.github.io/posts/sol-mqtt-broker-p3" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">第 3 部分 - 服务器</font></font></a></li>
+<li><a href="https://codepr.github.io/posts/sol-mqtt-broker-p4" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">第 4 部分-数据结构</font></font></a></li>
+<li><a href="https://codepr.github.io/posts/sol-mqtt-broker-p5" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">第 5 部分-主题抽象</font></font></a></li>
+<li><a href="https://codepr.github.io/posts/sol-mqtt-broker-p6" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">第 6 部分 - 处理程序</font></font></a></li>
+<li><a href="https://codepr.github.io/posts/sol-mqtt-broker-bonus" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">奖励-多线程</font></font></a></li>
+</ul>
+</li>
+</ul>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">OpenGL的：</font></font></h3><a id="user-content-opengl" class="anchor" aria-label="永久链接：OpenGL：" href="#opengl"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用 OpenGL 在 C++ 中创建 2D Breakout 游戏克隆
+</font></font><ul dir="auto">
+<li><a href="https://learnopengl.com/In-Practice/2D-Game/Breakout" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">爆发</font></font></a></li>
+<li><a href="https://learnopengl.com/In-Practice/2D-Game/Setting-up" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">配置</font></font></a></li>
+<li><a href="https://learnopengl.com/In-Practice/2D-Game/Rendering-Sprites" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">渲染精灵</font></font></a></li>
+<li><a href="https://learnopengl.com/In-Practice/2D-Game/Levels" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">级别</font></font></a></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">碰撞
+</font></font><ul dir="auto">
+<li><a href="https://learnopengl.com/In-Practice/2D-Game/Collisions/Ball" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">球</font></font></a></li>
+<li><a href="https://learnopengl.com/In-Practice/2D-Game/Collisions/Collision-detection" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">碰撞检测</font></font></a></li>
+<li><a href="https://learnopengl.com/In-Practice/2D-Game/Collisions/Collision-resolution" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">碰撞解决</font></font></a></li>
+</ul>
+</li>
+<li><a href="https://learnopengl.com/In-Practice/2D-Game/Particles" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">粒子</font></font></a></li>
+<li><a href="https://learnopengl.com/In-Practice/2D-Game/Postprocessing" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">后期处理</font></font></a></li>
+<li><a href="https://learnopengl.com/In-Practice/2D-Game/Powerups" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">通电</font></font></a></li>
+<li><a href="https://learnopengl.com/In-Practice/2D-Game/Audio" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">声音的</font></font></a></li>
+<li><a href="https://learnopengl.com/In-Practice/2D-Game/Render-text" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">渲染文本</font></font></a></li>
+<li><a href="https://learnopengl.com/In-Practice/2D-Game/Final-thoughts" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">最后的想法</font></font></a></li>
+</ul>
+</li>
+<li><a href="https://handmadehero.org" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">手工制作的英雄</font></font></a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLMZ_9w2XRxiZq1vfw1lrpCMRDufe2MKV_" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">如何使用 C++/OpenGL 制作 Minecraft</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">（视频）</font></font></li>
+</ul>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">C＃：</font></font></h2><a id="user-content-c" class="anchor" aria-label="固定链接：C#：" href="#c"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li><a href="http://scottlilly.com/learn-c-by-building-a-simple-rpg-index/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">通过构建简单的 RPG 游戏学习 C#</font></font></a></li>
+<li><a href="https://roguesharp.wordpress.com/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用 C# 创建一个类 Rogue 游戏</font></font></a></li>
+<li><a href="https://www.intertech.com/Blog/xamarin-tutorial-part-1-create-a-blank-app/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用 C# 和 Xamarin 创建空白应用程序（正在进行中）</font></font></a></li>
+<li><a href="https://www.raywenderlich.com/134049/building-ios-apps-with-xamarin-and-visual-studio" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用 Xamarin 和 Visual Studio 构建 iOS 照片库应用程序</font></font></a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLVMqA0_8O85yC78I4Xj7z48ES48IQBa7p" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">构建 CoreWiki</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">这是一个 Wiki 风格的内容管理系统，完全使用 C#、ASP.NET Core 和 Razor Pages 编写。您可以</font></font><a href="https://github.com/csharpfritz/CoreWiki"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在此处</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">找到源代码。</font></font></li>
+</ul>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Clojure的：</font></font></h2><a id="user-content-clojure" class="anchor" aria-label="永久链接：Clojure：" href="#clojure"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li><a href="http://howistart.org/posts/clojure/1/index.html" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用 Clojure 构建 Twitter 机器人</font></font></a></li>
+<li><a href="https://bernhardwenzel.com/articles/clojure-spellchecker/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">构建拼写检查器</font></font></a></li>
+<li><a href="https://hackernoon.com/building-a-jira-integration-with-clojure-atlassian-connect-506ebd112807" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用 Clojure 和 Atlassian Connect 构建 JIRA 集成</font></font></a></li>
+<li><a href="https://github.com/aliaksandr-s/prototyping-with-clojure"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用 Clojure 进行原型设计</font></font></a></li>
+<li><a href="https://shaunlebron.github.io/t3tr0s-slides" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ClojureScript 中的俄罗斯方块</font></font></a></li>
+</ul>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">镖：</font></font></h2><a id="user-content-dart" class="anchor" aria-label="永久链接： Dart：" href="#dart"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">扑：</font></font></h3><a id="user-content-flutter" class="anchor" aria-label="永久链接：Flutter：" href="#flutter"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li><a href="https://youtu.be/O3nmP-lZAdg" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">带有管理面板的 Amazon Clone</font></font></a></li>
+<li><a href="https://youtu.be/7dAt-JMSCVQ" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">送餐应用程序</font></font></a></li>
+<li><a href="https://youtu.be/0_GJ1w_iG44" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Google Docs 克隆</font></font></a></li>
+<li><a href="https://youtu.be/mEPm9w5QlJM" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Instagram 克隆</font></font></a></li>
+<li><a href="https://youtu.be/Aut-wfXacXg" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">多人井字游戏</font></font></a></li>
+<li><a href="https://youtu.be/4E4V9F3cbp4" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">TikTok 克隆版</font></font></a></li>
+<li><a href="https://youtu.be/71AsYo2q_0Y" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">机票预订应用程序</font></font></a></li>
+<li><a href="https://youtu.be/x4DydJKVvQk" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">旅行应用程序</font></font></a></li>
+<li><a href="https://youtu.be/U9YKZrDX0CQ" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Twitch 克隆</font></font></a></li>
+<li><a href="https://youtu.be/yqwfP2vXWJQ" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">WhatsApp 克隆</font></font></a></li>
+<li><a href="https://youtu.be/_W0RN_Cqhpg" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Wordle 克隆</font></font></a></li>
+<li><a href="https://youtu.be/sMA1dKbv33Y" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">缩放克隆</font></font></a></li>
+<li><a href="https://youtu.be/J8IFNKzs3TI" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Netflix 克隆</font></font></a></li>
+</ul>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">灵丹妙药</font></font></h2><a id="user-content-elixir" class="anchor" aria-label="永久链接：Elixir" href="#elixir"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li><a href="https://sheharyar.me/blog/simple-chat-phoenix-elixir/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用 Elixir 和 Phoenix 构建简单的聊天应用程序</font></font></a></li>
+<li><a href="https://medium.com/free-code-camp/how-to-write-a-super-fast-link-shortener-with-elixir-phoenix-and-mnesia-70ffa1564b3c" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">如何使用 Elixir、Phoenix 和 Mnesia 编写超快速链接缩短器</font></font></a></li>
+</ul>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Erlang</font></font></h2><a id="user-content-erlang" class="anchor" aria-label="永久链接：Erlang" href="#erlang"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li><a href="https://medium.com/@kansi/chatbus-build-your-first-multi-user-chat-room-app-with-erlang-otp-b55f72064901" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ChatBus：使用 Erlang/OTP 构建您的第一个多用户聊天室应用程序</font></font></a></li>
+<li><a href="http://marianoguerra.org/posts/making-a-chat-app-with-erlang-rebar-cowboy-and-bullet.html" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用 Erlang、Rebar、Cowboy 和 Bullet 制作聊天应用程序</font></font></a></li>
+</ul>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">F＃：</font></font></h2><a id="user-content-f" class="anchor" aria-label="固定链接：F#：" href="#f"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li><a href="http://tomasp.net/blog/2018/write-your-own-excel" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">用 100 行 F# 编写自己的 Excel</font></font></a></li>
+</ul>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Java：</font></font></h2><a id="user-content-java" class="anchor" aria-label="永久链接：Java：" href="#java"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li><a href="http://www.craftinginterpreters.com/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">构建解释器</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">（第 4-13 章用 Java 编写）</font></font></li>
+<li><a href="http://javarevisited.blogspot.com/2015/06/how-to-create-http-server-in-java-serversocket-example.html" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用 Java 构建简单的 HTTP 服务器</font></font></a></li>
+<li><a href="https://www.youtube.com/watch?v=dhWL4DC7Krs" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">构建 Android 手电筒应用</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">（视频）</font></font></li>
+<li><a href="https://spring.io/guides/gs/securing-web/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">构建具有用户身份验证的 Spring Boot 应用程序</font></font></a></li>
+</ul>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">JavaScript的：</font></font></h2><a id="user-content-javascript" class="anchor" aria-label="固定链接：JavaScript：" href="#javascript"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li><a href="https://javascript30.com" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">通过 30 个教程在 30 天内构建 30 个东西</font></font></a></li>
+<li><a href="https://medium.com/codingthesmartway-com-blog/pure-javascript-building-a-real-world-application-from-scratch-5213591cfcd6" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用纯 JS 构建应用程序</font></font></a></li>
+<li><a href="https://link.medium.com/wWUO7TN8SS" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">构建 Jupyter Notebook 扩展</font></font></a></li>
+<li><a href="https://medium.com/javascript-in-plain-english/build-tic-tac-toe-game-using-javascript-3afba3c8fdcc" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用 JavaScript 构建井字游戏</font></font></a></li>
+<li><a href="https://webdesign.tutsplus.com/tutorials/build-a-simple-weather-app-with-vanilla-javascript--cms-33893" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用 Vanilla JavaScript 构建一个简单的天气应用程序</font></font></a></li>
+<li><a href="https://github.com/dwyl/javascript-todo-list-tutorial"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用 JavaScript 构建待办事项列表应用程序</font></font></a></li>
+</ul>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">HTML 和 CSS：</font></font></h2><a id="user-content-html-and-css" class="anchor" aria-label="永久链接：HTML 和 CSS：" href="#html-and-css"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li><a href="https://medium.freecodecamp.org/how-to-build-a-delightful-loading-screen-in-5-minutes-847991da509f" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">构建加载屏幕</font></font></a></li>
+<li><a href="https://medium.freecodecamp.org/how-to-build-an-html-calculator-app-from-scratch-using-javascript-4454b8714b98" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用 JS 构建 HTML 计算器</font></font></a></li>
+<li><a href="https://www.freecodecamp.org/news/think-like-a-programmer-how-to-build-snake-using-only-javascript-html-and-css-7b1479c3339e/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">仅使用 JavaScript、HTML 和 CSS 构建贪吃蛇</font></font></a></li>
+</ul>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">移动应用程序：</font></font></h3><a id="user-content-mobile-application" class="anchor" aria-label="永久链接：移动应用程序：" href="#mobile-application"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li><a href="https://egghead.io/courses/build-a-react-native-todo-application" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">构建 React Native Todo 应用程序</font></font></a></li>
+<li><a href="https://medium.com/@alialhaddad/how-to-use-redux-thunk-in-react-and-react-native-4743a1321bd0" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用 Redux Thunk 构建 React Native 应用程序</font></font></a></li>
+</ul>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Web 应用程序：</font></font></h3><a id="user-content-web-applications" class="anchor" aria-label="永久链接：Web 应用程序：" href="#web-applications"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<div class="markdown-heading" dir="auto"><h4 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">反应：</font></font></h4><a id="user-content-react" class="anchor" aria-label="永久链接：反应：" href="#react"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li><a href="http://serverless-stack.com/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">创建无服务器 React.js 应用程序</font></font></a></li>
+<li><a href="http://codeloveandboards.com/blog/2016/01/04/trello-tribute-with-phoenix-and-react-pt-1/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">创建 Trello 克隆</font></font></a></li>
+<li><a href="http://sahatyalkabov.com/create-a-character-voting-app-using-react-nodejs-mongodb-and-socketio" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用 React、Node、MongoDB 和 SocketIO 创建角色投票应用程序</font></font></a></li>
+<li><a href="https://www.fullstackreact.com/articles/react-tutorial-cloning-yelp/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">React 教程：克隆 Yelp</font></font></a></li>
+<li><a href="https://teropa.info/blog/2015/09/10/full-stack-redux-tutorial.html" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用 Mocha、React、Redux 和 Immutable 构建一个测试优先的全栈电影投票应用程序</font></font></a></li>
+<li><a href="https://scotch.io/tutorials/build-a-real-time-twitter-stream-with-node-and-react-js" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用 React 和 Node 构建 Twitter 流</font></font></a></li>
+<li><a href="https://medium.com/@kris101/clone-medium-on-node-js-and-react-js-731cdfbb6878" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用 React.js 和 Node.js 构建一个简单的 Medium 克隆</font></font></a></li>
+<li><a href="https://medium.freecodecamp.org/how-to-integrate-mailchimp-in-a-javascript-web-app-2a889fb43f6f" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在 JS 中集成 MailChimp</font></font></a></li>
+<li><a href="https://medium.freecodecamp.org/building-chrome-extensions-in-react-parcel-79d0240dd58f" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用 React + Parcel 构建 Chrome 扩展程序</font></font></a></li>
+<li><a href="https://blog.hasura.io/tutorial-fullstack-react-native-with-graphql-and-authentication-18183d13373a" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用 React Native 构建 ToDo 应用</font></font></a></li>
+<li><a href="https://medium.freecodecamp.org/how-to-build-a-chat-application-using-react-redux-redux-saga-and-web-sockets-47423e4bc21a" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">制作聊天应用程序</font></font></a></li>
+<li><a href="https://medium.freecodecamp.org/create-a-news-app-using-react-native-ced249263627" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用 React Native 创建新闻应用程序</font></font></a></li>
+<li><a href="https://medium.freecodecamp.org/learn-webpack-for-react-a36d4cac5060" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">学习 React 的 Webpack</font></font></a></li>
+<li><a href="https://blog.bitsrc.io/testing-your-react-app-with-puppeteer-and-jest-c72b3dfcde59" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用 Puppeteer 和 Jest 测试 React App</font></font></a></li>
+<li><a href="https://medium.freecodecamp.org/how-to-build-your-own-react-boilerplate-2f8cbbeb9b3f" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">构建自己的 React 样板</font></font></a></li>
+<li><a href="https://medium.freecodecamp.org/create-gameoflife-with-react-in-one-hour-8e686a410174" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用 React 编写生命游戏代码</font></font></a></li>
+<li><a href="https://hackernoon.com/a-basic-react-redux-introductory-tutorial-adcc681eeb5e" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">基础 React+Redux 入门教程</font></font></a></li>
+<li><a href="https://hackernoon.com/build-an-appointment-scheduler-using-react-twilio-and-cosmic-js-95377f6d1040" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">建立预约计划程序</font></font></a></li>
+<li><a href="https://codeburst.io/build-a-chat-app-with-sentiment-analysis-using-next-js-c43ebf3ea643" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用情感分析构建聊天应用程序</font></font></a></li>
+<li><a href="https://hackernoon.com/full-stack-web-application-using-react-node-js-express-and-webpack-97dbd5b9d708" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">构建全栈 Web 应用程序设置</font></font></a></li>
+<li><a href="https://www.youtube.com/watch?v=hT3j87FMR6M" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用 React 和 Firebase 创建 Todoist 克隆</font></font></a></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">构建一个随机报价机
+</font></font><ul dir="auto">
+<li><a href="https://www.youtube.com/watch?v=3QngsWA9IEE" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">第1部分</font></font></a></li>
+<li><a href="https://www.youtube.com/watch?v=XnoTmO06OYo" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">第2部分</font></font></a></li>
+<li><a href="https://www.youtube.com/watch?v=us51Jne67_I" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">第 3 部分</font></font></a></li>
+<li><a href="https://www.youtube.com/watch?v=iZx7hqHb5MU" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">第 4 部分</font></font></a></li>
+<li><a href="https://www.youtube.com/watch?v=lpba9vBqXl0" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">第 5 部分</font></font></a></li>
+<li><a href="https://www.youtube.com/watch?v=Jvp8j6zrFHE" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">第 6 部分</font></font></a></li>
+<li><a href="https://www.youtube.com/watch?v=M_hFfrN8_PQ" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">第 7 部分</font></font></a></li>
+</ul>
+</li>
+<li><a href="https://www.youtube.com/watch?v=-edmQKcOW8s" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">React Phone 电子商务项目（视频）</font></font></a></li>
+</ul>
+<div class="markdown-heading" dir="auto"><h4 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">角度：</font></font></h4><a id="user-content-angular" class="anchor" aria-label="永久链接：角度：" href="#angular"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li>
+<p dir="auto"><a href="https://hackhands.com/building-instagram-clone-angularjs-satellizer-nodejs-mongodb/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用 Angular 1.x 构建 Instagram 克隆</font></font></a></p>
+</li>
+<li>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用 Angular 2+ 构建具有离线功能的 Hacker News 客户端</font></font></p>
+<ul dir="auto">
+<li><a href="https://houssein.me/angular2-hacker-news" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">第1部分</font></font></a></li>
+<li><a href="https://houssein.me/progressive-angular-applications" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">第2部分</font></font></a></li>
+</ul>
+</li>
+<li>
+<p dir="auto"><a href="https://thinkster.io/django-angularjs-tutorial" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用 Django 和 AngularJS（Angular 1.x）构建 Google+ 克隆</font></font></a></p>
+</li>
+<li>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用 Angular 8 构建美丽的真实世界应用程序：</font></font></p>
+<ul dir="auto">
+<li><a href="https://medium.com/@hamedbaatour/build-a-real-world-beautiful-web-app-with-angular-6-a-to-z-ultimate-guide-2018-part-i-e121dd1d55e" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">第一部分</font></font></a></li>
+<li><a href="https://medium.com/@hamedbaatour/build-a-real-world-beautiful-web-app-with-angular-8-the-ultimate-guide-2019-part-ii-fe70852b2d6d" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">第二部分</font></font></a></li>
+</ul>
+</li>
+<li>
+<p dir="auto"><a href="https://medium.com/@tomastrajan/how-to-build-responsive-layouts-with-bootstrap-4-and-angular-6-cfbb108d797b" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用 BootStrap 4 和 Angular 6 构建响应式布局</font></font></a></p>
+</li>
+<li>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用 Angular 5 的 ToDo 应用</font></font></p>
+<ul dir="auto">
+<li><a href="http://www.discoversdk.com/blog/intro-to-angular-and-the-evolution-of-the-web" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Angular 简介</font></font></a></li>
+<li><a href="http://www.discoversdk.com/blog/angular-5-to-do-list-app-part-1" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">第1部分</font></font></a></li>
+</ul>
+</li>
+</ul>
+<div class="markdown-heading" dir="auto"><h4 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">节点：</font></font></h4><a id="user-content-node" class="anchor" aria-label="永久链接： 节点：" href="#node"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li><a href="https://scotch.io/tutorials/building-a-real-time-markdown-viewer" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用 NodeJS 构建实时 Markdown 编辑器</font></font></a></li>
+<li><a href="http://mherman.org/blog/2016/04/28/test-driven-development-with-node/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用 Node、Postgres 和 Knex 进行测试驱动开发</font></font></a></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用 Node.js 编写 Twitter 机器人
+</font></font><ul dir="auto">
+<li><a href="https://codeburst.io/build-a-simple-twitter-bot-with-node-js-in-just-38-lines-of-code-ed92db9eb078" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">第1部分</font></font></a></li>
+<li><a href="https://codeburst.io/build-a-simple-twitter-bot-with-node-js-part-2-do-more-2ef1e039715d" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">第2部分</font></font></a></li>
+</ul>
+</li>
+<li><a href="https://medium.freecodecamp.org/how-to-build-a-simple-search-bot-in-30-minutes-eb56fcedcdb1" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">30 分钟内构建一个简单的搜索机器人</font></font></a></li>
+<li><a href="https://medium.freecodecamp.org/how-i-built-a-job-scraping-web-app-using-node-js-and-indreed-7fbba124bbdc" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">构建一个职位爬取 Web 应用程序</font></font></a></li>
+<li><a href="https://blog.scottlogic.com/2017/05/22/gifbot-github-integration.html" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">构建 GitHub 应用程序</font></font></a></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">如何使用 JavaScript、Node.JS、MongoDB 和 Web Sockets 构建自己的 Uber-for-X 应用程序
+</font></font><ul dir="auto">
+<li><a href="https://www.ashwinhariharan.tech/blog/how-to-build-your-own-uber-for-x-app/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">第1部分</font></font></a></li>
+<li><a href="https://www.ashwinhariharan.tech/blog/how-to-build-your-own-uber-for-x-app-part-2/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">第2部分</font></font></a></li>
+</ul>
+</li>
+</ul>
+<div class="markdown-heading" dir="auto"><h4 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Vue</font></font></h4><a id="user-content-vue" class="anchor" aria-label="固定链接：Vue" href="#vue"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li><a href="https://medium.com/@anas.mammeri/vue-2-firebase-how-to-build-a-vue-app-with-firebase-authentication-system-in-15-minutes-fdce6f289c3c" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Vue 2 + Firebase：如何在 15 分钟内构建带有 Firebase 身份验证系统的 Vue 应用程序</font></font></a></li>
+<li><a href="https://matthiashager.com/complete-vuejs-application-tutorial/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Vue.js 应用程序教程 – 使用 Vue 创建一个简单的预算应用程序</font></font></a></li>
+<li><a href="https://scotch.io/tutorials/build-a-blog-with-vue-graphql-and-apollo-client" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用 Vue、GraphQL 和 Apollo 构建博客</font></font></a></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用 MEVN（MongoDB、Express、Vue、Node）堆栈构建全栈 Web 应用程序
+</font></font><ul dir="auto">
+<li><a href="https://medium.com/@anaida07/mevn-stack-application-part-1-3a27b61dcae0" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">第1部分</font></font></a></li>
+<li><a href="https://medium.com/@anaida07/mevn-stack-application-part-2-2-9ebcf8a22753" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">第2部分</font></font></a></li>
+</ul>
+</li>
+<li><a href="https://www.youtube.com/watch?v=78tNYZUS-ps" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Vue.js 待办事项列表教程（视频）</font></font></a></li>
+<li><a href="https://www.ably.io/tutorials/peer-to-peer-vue" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Vue 2 + Pub/Sub：为游戏构建点对点多用户平台</font></font></a></li>
+</ul>
+<div class="markdown-heading" dir="auto"><h4 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">其他（Hapi、Express……）：</font></font></h4><a id="user-content-others-hapi-express" class="anchor" aria-label="永久链接：其他（Hapi、Express……）：" href="#others-hapi-express"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">构建渐进式 Web 应用程序 (PWA)
+</font></font><ul dir="auto">
+<li><a href="https://bitsofco.de/bitsofcode-pwa-part-1-offline-first-with-service-worker/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">第1部分</font></font></a></li>
+<li><a href="https://bitsofco.de/bitsofcode-pwa-part-2-instant-loading-with-indexeddb/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">第2部分</font></font></a></li>
+<li><a href="https://bitsofco.de/bitsofcode-pwa-part-3-push-notifications/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">第 3 部分</font></font></a></li>
+</ul>
+</li>
+<li><a href="https://medium.freecodecamp.org/build-native-desktop-apps-with-javascript-a49ede90d8e9" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用 JS 构建原生桌面应用</font></font></a></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用 NodeJs、GraphQL 和 Hapi 构建强大的 API
+</font></font><ul dir="auto">
+<li><a href="https://medium.com/@wesharehoodies/how-to-setup-a-powerful-api-with-nodejs-graphql-mongodb-hapi-and-swagger-e251ac189649" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">第一部分</font></font></a></li>
+</ul>
+</li>
+</ul>
+<div class="markdown-heading" dir="auto"><h4 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">D3.js</font></font></h4><a id="user-content-d3js" class="anchor" aria-label="永久链接：D3.js" href="#d3js"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li><a href="https://www.sitepoint.com/d3-js-data-visualizations/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">通过示例学习 D3</font></font></a></li>
+<li><a href="https://medium.freecodecamp.org/learn-to-create-a-line-chart-using-d3-js-4f43f1ee716b" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">学习制作折线图</font></font></a></li>
+</ul>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">游戏开发：</font></font></h3><a id="user-content-game-development" class="anchor" aria-label="固定链接：游戏开发：" href="#game-development"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li><a href="https://developer.mozilla.org/en-US/docs/Games/Tutorials/2D_breakout_game_Phaser" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用 Phaser 制作 2D 打砖块游戏</font></font></a></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用 Phaser 通过 HTML5 和 JavaScript 制作 Flappy Bird
+</font></font><ul dir="auto">
+<li><a href="http://www.lessmilk.com/tutorial/flappy-bird-phaser-1" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">第1部分</font></font></a></li>
+<li><a href="http://www.lessmilk.com/tutorial/flappy-bird-phaser-2" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">第2部分</font></font></a></li>
+</ul>
+</li>
+</ul>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">桌面应用程序：</font></font></h3><a id="user-content-desktop-application" class="anchor" aria-label="永久链接：桌面应用程序：" href="#desktop-application"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li><a href="https://medium.freecodecamp.org/build-a-desktop-chat-app-with-react-electron-and-chatkit-744d168e6f2f" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用 React 和 Electron 构建桌面聊天应用程序</font></font></a></li>
+</ul>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">各种各样的：</font></font></h3><a id="user-content-miscellaneous" class="anchor" aria-label="永久链接：其他：" href="#miscellaneous"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li><a href="https://www.pubnub.com/blog/build-yourself-a-web-framework-in-less-than-20-lines-of-code/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">如何用不到 20 行代码构建 Web 框架</font></font></a></li>
+<li><a href="https://zapier.com/engineering/how-to-build-redux/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">构建自己的 Redux</font></font></a></li>
+<li><a href="https://medium.com/@deathmood/how-to-write-your-own-virtual-dom-ee74acc13060" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">如何编写自己的虚拟 DOM</font></font></a></li>
+<li><a href="https://andrewgriffithsonline.com/blog/serverless-websockets-on-aws/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在 AWS 上使用 WebSockets 构建实时无服务器 GraphQL API</font></font></a></li>
+</ul>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">科特林：</font></font></h2><a id="user-content-kotlin" class="anchor" aria-label="永久链接：Kotlin：" href="#kotlin"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li><a href="https://medium.com/@juanchosaravia/learn-kotlin-while-developing-an-android-app-introduction-567e21ff9664" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Keddit - 在开发 Android 应用程序时学习 Kotlin</font></font></a></li>
+</ul>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Lua：</font></font></h2><a id="user-content-lua" class="anchor" aria-label="固定链接：Lua：" href="#lua"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">爱：</font></font></h3><a id="user-content-löve" class="anchor" aria-label="永久链接： 爱：" href="#löve"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">BYTEPATH：使用 Lua 和 LÖVE 创建完整的游戏
+</font></font><ul dir="auto">
+<li><a href="https://github.com/SSYGEN/blog/issues/30" data-hovercard-type="issue" data-hovercard-url="/a327ex/blog/issues/30/hovercard"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">第 0 部分：简介</font></font></a></li>
+<li><a href="https://github.com/SSYGEN/blog/issues/15" data-hovercard-type="issue" data-hovercard-url="/a327ex/blog/issues/15/hovercard"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">第一部分：游戏循环</font></font></a></li>
+<li><a href="https://github.com/SSYGEN/blog/issues/16" data-hovercard-type="issue" data-hovercard-url="/a327ex/blog/issues/16/hovercard"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">第 2 部分：库</font></font></a></li>
+<li><a href="https://github.com/SSYGEN/blog/issues/17" data-hovercard-type="issue" data-hovercard-url="/a327ex/blog/issues/17/hovercard"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">第 3 部分：房间和区域</font></font></a></li>
+<li><a href="https://github.com/SSYGEN/blog/issues/18" data-hovercard-type="issue" data-hovercard-url="/a327ex/blog/issues/18/hovercard"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">第四部分：练习</font></font></a></li>
+<li><a href="https://github.com/SSYGEN/blog/issues/19" data-hovercard-type="issue" data-hovercard-url="/a327ex/blog/issues/19/hovercard"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">第五部分：游戏基础</font></font></a></li>
+<li><a href="https://github.com/SSYGEN/blog/issues/20" data-hovercard-type="issue" data-hovercard-url="/a327ex/blog/issues/20/hovercard"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">第 6 部分：播放器基础知识</font></font></a></li>
+<li><a href="https://github.com/SSYGEN/blog/issues/21" data-hovercard-type="issue" data-hovercard-url="/a327ex/blog/issues/21/hovercard"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">第七部分：球员数据和攻击</font></font></a></li>
+<li><a href="https://github.com/SSYGEN/blog/issues/22" data-hovercard-type="issue" data-hovercard-url="/a327ex/blog/issues/22/hovercard"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">第八部分：敌人</font></font></a></li>
+<li><a href="https://github.com/SSYGEN/blog/issues/23" data-hovercard-type="issue" data-hovercard-url="/a327ex/blog/issues/23/hovercard"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">第 9 部分：Director 和游戏循环</font></font></a></li>
+<li><a href="https://github.com/SSYGEN/blog/issues/24" data-hovercard-type="issue" data-hovercard-url="/a327ex/blog/issues/24/hovercard"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">第 10 部分：编码实践</font></font></a></li>
+<li><a href="https://github.com/SSYGEN/blog/issues/25" data-hovercard-type="issue" data-hovercard-url="/a327ex/blog/issues/25/hovercard"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">第 11 部分：被动语态</font></font></a></li>
+<li><a href="https://github.com/SSYGEN/blog/issues/26" data-hovercard-type="issue" data-hovercard-url="/a327ex/blog/issues/26/hovercard"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">第 12 部分：更多被动语态</font></font></a></li>
+<li><a href="https://github.com/SSYGEN/blog/issues/27" data-hovercard-type="issue" data-hovercard-url="/a327ex/blog/issues/27/hovercard"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">第 13 部分：技能树</font></font></a></li>
+<li><a href="https://github.com/SSYGEN/blog/issues/28" data-hovercard-type="issue" data-hovercard-url="/a327ex/blog/issues/28/hovercard"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">第 14 部分：控制台</font></font></a></li>
+<li><a href="https://github.com/SSYGEN/blog/issues/29" data-hovercard-type="issue" data-hovercard-url="/a327ex/blog/issues/29/hovercard"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">第 15 部分：最终</font></font></a></li>
+</ul>
+</li>
+</ul>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Python：</font></font></h2><a id="user-content-python" class="anchor" aria-label="永久链接：Python：" href="#python"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">网页抓取：</font></font></h3><a id="user-content-web-scraping" class="anchor" aria-label="永久链接：网页抓取：" href="#web-scraping"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li><a href="https://marcobonzanini.com/2015/03/02/mining-twitter-data-with-python-part-1/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用 Python 挖掘 Twitter 数据</font></font></a></li>
+<li><a href="https://realpython.com/blog/python/web-scraping-with-scrapy-and-mongodb/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用 Scrapy 和 MongoDB 爬取网站数据</font></font></a></li>
+<li><a href="http://www.byperth.com/2018/04/25/guide-web-scraping-101-what-you-need-to-know-and-how-to-scrape-with-python-selenium-webdriver/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">如何使用 Python 和 Selenium WebDriver 进行爬取</font></font></a></li>
+<li><a href="https://medium.com/@nishantsahoo.in/which-movie-should-i-watch-5c83a3c0f5b1" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">我应该用 BeautifulSoup 看哪部电影</font></font></a></li>
+</ul>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Web 应用程序：</font></font></h3><a id="user-content-web-applications-1" class="anchor" aria-label="永久链接：Web 应用程序：" href="#web-applications-1"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li><a href="https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-i-hello-world" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用 Flask 构建微博</font></font></a></li>
+<li><a href="https://tutorial.djangogirls.org/en/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在 Django 中创建博客 Web 应用</font></font></a></li>
+<li><a href="https://www.twilio.com/blog/2015/03/choose-your-own-adventures-presentations-wizard-mode-part-1-of-3.html" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">选择你自己的冒险演示</font></font></a></li>
+<li><a href="https://realpython.com/blog/python/rethink-flask-a-simple-todo-list-powered-by-flask-and-rethinkdb/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用 Flask 和 RethinkDB 构建待办事项列表</font></font></a></li>
+<li><a href="http://www.obeythetestinggoat.com/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用 Django 和测试驱动开发构建待办事项列表</font></font></a></li>
+<li><a href="http://www.skybert.net/python/developing-a-restful-micro-service-in-python/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用 Python 构建 RESTful 微服务</font></font></a></li>
+<li><a href="https://testdriven.io/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用 Docker、Flask 和 React 进行微服务</font></font></a></li>
+<li><a href="https://pythonspot.com/flask-web-app-with-python/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用 Flask 构建一个简单的 Web 应用程序</font></font></a></li>
+<li><a href="https://codeburst.io/create-a-django-api-in-under-20-minutes-2a082a60f6f3" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在 20 分钟内创建 Django API</font></font></a></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用 Django、Postgres 和 JavaScript 构建社区驱动的交付应用程序
+</font></font><ul dir="auto">
+<li><a href="https://www.ashwinhariharan.tech/blog/thinking-of-building-a-contact-tracing-application-heres-what-you-can-do-instead/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">第1部分</font></font></a></li>
+<li><a href="https://www.ashwinhariharan.tech/blog/thinking-of-building-a-contact-tracing-application-heres-what-you-can-do-instead-part-2/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">第2部分</font></font></a></li>
+</ul>
+</li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用 Vue、django-notifs、RabbitMQ 和 uWSGI 的实时聊天应用程序
+</font></font><ul dir="auto">
+<li><a href="https://danidee10.github.io/2018/01/01/realtime-django-1.html" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">第1部分</font></font></a></li>
+<li><a href="https://danidee10.github.io/2018/01/03/realtime-django-2.html" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">第2部分</font></font></a></li>
+<li><a href="https://danidee10.github.io/2018/01/07/realtime-django-3.html" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">第 3 部分</font></font></a></li>
+<li><a href="https://danidee10.github.io/2018/01/10/realtime-django-4.html" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">第 4 部分</font></font></a></li>
+<li><a href="https://danidee10.github.io/2018/01/13/realtime-django-5.html" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">第 5 部分</font></font></a></li>
+<li><a href="https://danidee10.github.io/2018/03/12/realtime-django-6.html" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">第 6 部分</font></font></a></li>
+</ul>
+</li>
+</ul>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">机器人：</font></font></h3><a id="user-content-bots" class="anchor" aria-label="永久链接：机器人：" href="#bots"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li><a href="http://pythonforengineers.com/build-a-reddit-bot-part-1/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">构建 Reddit 机器人</font></font></a></li>
+<li><a href="https://www.youtube.com/watch?v=krTUf7BpTc0" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">如何制作 Reddit 机器人 - YouTube</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">（视频）</font></font></li>
+<li><a href="https://blog.hartleybrody.com/fb-messenger-bot/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">构建 Facebook Messenger 机器人</font></font></a></li>
+<li><a href="https://pythontips.com/2017/04/13/making-a-reddit-facebook-messenger-bot/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">制作 Reddit + Facebook Messenger 机器人</font></font></a></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">如何使用 Python 创建 Telegram 机器人
+</font></font><ul dir="auto">
+<li><a href="https://khashtamov.com/en/how-to-create-a-telegram-bot-using-python/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">第1部分</font></font></a></li>
+<li><a href="https://khashtamov.com/en/how-to-deploy-telegram-bot-django/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">第2部分</font></font></a></li>
+</ul>
+</li>
+<li><a href="https://medium.freecodecamp.org/creating-a-twitter-bot-in-python-with-tweepy-ac524157a607" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用 Python 创建 Twitter 机器人</font></font></a></li>
+</ul>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">数据科学：</font></font></h3><a id="user-content-data-science" class="anchor" aria-label="固定链接：数据科学：" href="#data-science"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">通过做几个项目学习 Python 数据科学（视频）：
+</font></font><ul dir="auto">
+<li><a href="https://www.youtube.com/watch?v=T5pRlIbr6gg" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">第 1 部分：简介</font></font></a></li>
+<li><a href="https://www.youtube.com/watch?v=o_OZdbCzHUA" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">第 2 部分：Twitter 情绪分析</font></font></a></li>
+<li><a href="https://www.youtube.com/watch?v=9gBC9R-msAk&amp;list=PL2-dafEMk2A6QKz1mrk1uIGfHkC1zZ6UU&amp;index=3" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">第三部分：推荐系统</font></font></a></li>
+<li><a href="https://www.youtube.com/watch?v=SSu00IRRraY&amp;index=4&amp;list=PL2-dafEMk2A6QKz1mrk1uIGfHkC1zZ6UU" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">第 4 部分：预测股票价格</font></font></a></li>
+<li><a href="https://www.youtube.com/watch?v=MrBzgvUNr4w&amp;list=PL2-dafEMk2A6QKz1mrk1uIGfHkC1zZ6UU&amp;index=5" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">第五部分：TensorFlow 中的 Deep Dream</font></font></a></li>
+<li><a href="https://www.youtube.com/watch?v=dSofAXnnFrY&amp;index=6&amp;list=PL2-dafEMk2A6QKz1mrk1uIGfHkC1zZ6UU" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">第六部分：遗传算法</font></font></a></li>
+</ul>
+</li>
+</ul>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">机器学习：</font></font></h3><a id="user-content-machine-learning" class="anchor" aria-label="固定链接：机器学习：" href="#machine-learning"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li><a href="https://www.youtube.com/watch?v=uwwWVAgJBcM" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用 Python 从头编写线性回归</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">（视频）</font></font></li>
+<li><a href="https://machinelearningmastery.com/machine-learning-in-python-step-by-step/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用 Python 进行机器学习</font></font></a></li>
+<li><a href="https://medium.freecodecamp.org/using-machine-learning-to-predict-the-quality-of-wines-9e2e13d7480d" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">预测葡萄酒品质</font></font></a></li>
+<li><a href="https://towardsdatascience.com/solving-a-simple-classification-problem-with-python-fruits-lovers-edition-d20ab6b071d2" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">解决水果分类问题</font></font></a></li>
+<li><a href="https://scikit-learn.org/stable/unsupervised_learning.html" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用 Python 学习无监督学习</font></font></a></li>
+<li><a href="https://towardsdatascience.com/how-to-build-your-own-neural-network-from-scratch-in-python-68998a08e4f6" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用 Python 从头构建自己的神经网络</font></font></a></li>
+<li><a href="https://medium.com/we-are-orb/linear-regression-in-python-without-scikit-learn-50aef4b8d122" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">不使用 sklearn 的 Python 线性回归</font></font></a></li>
+<li><a href="https://medium.com/we-are-orb/multivariate-linear-regression-in-python-without-scikit-learn-7091b1d45905" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">不使用 sklearn 的多元线性回归</font></font></a></li>
+<li><a href="https://towardsdatascience.com/how-to-build-a-simple-song-recommender-296fcbc8c85" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用 KNN 的音乐推荐</font></font></a></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">查找类似的 Quora 问题-
+</font></font><ul dir="auto">
+<li><a href="https://towardsdatascience.com/finding-similar-quora-questions-with-bow-tfidf-and-random-forest-c54ad88d1370" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用 BOW、TFIDF 和 Xgboost</font></font></a></li>
+<li><a href="https://towardsdatascience.com/finding-similar-quora-questions-with-word2vec-and-xgboost-1a19ad272c0d" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用 Word2Vec 和 Xgboost</font></font></a></li>
+</ul>
+</li>
+<li><a href="https://data-flair.training/blogs/advanced-python-project-detecting-fake-news/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用 Python 和机器学习检测虚假新闻</font></font></a></li>
+</ul>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">OpenCV：</font></font></h3><a id="user-content-opencv" class="anchor" aria-label="永久链接：OpenCV：" href="#opencv"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li><a href="https://www.pyimagesearch.com/2014/09/01/build-kick-ass-mobile-document-scanner-just-5-minutes/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">构建文档扫描仪</font></font></a></li>
+<li><a href="https://www.pyimagesearch.com/2018/02/26/face-detection-with-opencv-and-deep-learning/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用 OpenCV 和深度学习构建人脸检测器</font></font></a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLKHYJbyeQ1a0oGzgRXy-QwAN1tSV4XZxg" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用 YOLOv3 构建最快的自定义对象检测系统（视频播放列表）</font></font></a></li>
+<li><a href="https://www.pyimagesearch.com/2018/06/18/face-recognition-with-opencv-python-and-deep-learning/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用 OpenCV、Python 和深度学习构建人脸识别系统</font></font></a></li>
+<li><a href="https://www.pyimagesearch.com/2018/07/16/opencv-saliency-detection/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">检测图像中的显著特征</font></font></a></li>
+<li><a href="https://www.pyimagesearch.com/2018/05/21/an-opencv-barcode-and-qr-code-scanner-with-zbar/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">构建条形码扫描器</font></font></a></li>
+<li><a href="https://www.pyimagesearch.com/2018/07/09/face-clustering-with-python/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用 Python 学习人脸聚类</font></font></a></li>
+<li><a href="https://www.pyimagesearch.com/wp-content/uploads/2014/11/opencv_crash_course_camshift.pdf" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用 Camshift 进行对象跟踪</font></font></a></li>
+<li><a href="https://www.pyimagesearch.com/2018/09/03/semantic-segmentation-with-opencv-and-deep-learning/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用 OpenCV 和深度学习进行语义分割</font></font></a></li>
+<li><a href="https://www.pyimagesearch.com/2018/08/20/opencv-text-detection-east-text-detector/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">图像和视频中的文本检测</font></font></a></li>
+<li><a href="https://www.pyimagesearch.com/2018/08/13/opencv-people-counter/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用 OpenCV 进行人流量计数器</font></font></a></li>
+<li><a href="https://www.pyimagesearch.com/2018/08/06/tracking-multiple-objects-with-opencv/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用 OpenCV 跟踪多个对象</font></font></a></li>
+<li><a href="https://www.pyimagesearch.com/2018/08/27/neural-style-transfer-with-opencv/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用 OpenCV 进行神经风格转换</font></font></a></li>
+<li><a href="https://www.pyimagesearch.com/2018/09/17/opencv-ocr-and-text-recognition-with-tesseract/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">OpenCV OCR 和文本识别</font></font></a></li>
+<li><a href="https://www.pyimagesearch.com/2017/02/20/text-skew-correction-opencv-python/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">文本倾斜校正教程</font></font></a></li>
+<li><a href="https://www.pyimagesearch.com/2017/04/03/facial-landmarks-dlib-opencv-python/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">面部特征点检测教程</font></font></a></li>
+<li><a href="https://www.learnopencv.com/deep-learning-based-object-detection-and-instance-segmentation-using-mask-r-cnn-in-opencv-python-c/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用 Mask-R-CNN 进行物体检测</font></font></a></li>
+<li><a href="https://www.pyimagesearch.com/2015/05/04/target-acquired-finding-targets-in-drone-and-quadcopter-video-streams-using-python-and-opencv/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">自动目标检测教程</font></font></a></li>
+<li><a href="https://www.learnopencv.com/eigenface-using-opencv-c-python/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用 OpenCV 的 EigenFaces</font></font></a></li>
+<li><a href="https://www.pyimagesearch.com/2018/04/02/faster-facial-landmark-detector-with-dlib/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">更快（5 点）面部特征检测教程</font></font></a></li>
+<li><a href="https://www.learnopencv.com/hand-keypoint-detection-using-deep-learning-and-opencv/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">手部关键点检测</font></font></a></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Dlib 相关对象跟踪 -
+</font></font><ul dir="auto">
+<li><a href="https://www.pyimagesearch.com/2018/10/22/object-tracking-with-dlib/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">单目标追踪器</font></font></a></li>
+<li><a href="https://www.pyimagesearch.com/2018/10/29/multi-object-tracking-with-dlib/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">多目标追踪器</font></font></a></li>
+</ul>
+</li>
+<li><a href="https://www.pyimagesearch.com/2018/12/17/image-stitching-with-opencv-and-python/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用 OpenCV 和 Python 进行图像拼接</font></font></a></li>
+<li><a href="https://www.pyimagesearch.com/2018/11/26/instance-segmentation-with-opencv/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用 OpenCV 进行实例分割</font></font></a></li>
+<li><a href="https://www.pyimagesearch.com/2020/05/04/covid-19-face-mask-detector-with-opencv-keras-tensorflow-and-deep-learning/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">口罩检测仪</font></font></a></li>
+</ul>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">深度学习：</font></font></h3><a id="user-content-deep-learning" class="anchor" aria-label="永久链接：深度学习：" href="#deep-learning"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li><a href="http://danielnouri.org/notes/2014/12/17/using-convolutional-neural-nets-to-detect-facial-keypoints-tutorial/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用卷积神经网络检测面部关键点</font></font></a></li>
+<li><a href="https://www.learnopencv.com/average-face-opencv-c-python-tutorial/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用 Python 和 OpenCV 生成平均人脸</font></font></a></li>
+<li><a href="https://medium.com/@ageitgey/how-to-break-a-captcha-system-in-15-minutes-with-machine-learning-dbebb035a710" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用 CNN 破解验证码系统</font></font></a></li>
+<li><a href="https://medium.com/google-cloud/keras-inception-v3-on-google-compute-engine-a54918b0058" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用预先训练的 Inception 模型提供图像预测</font></font></a></li>
+<li><a href="https://hackernoon.com/deep-learning-cnns-in-tensorflow-with-gpus-cba6efe0acc2" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">创建你的第一个 CNN</font></font></a></li>
+<li><a href="https://hackernoon.com/building-a-facial-recognition-pipeline-with-deep-learning-in-tensorflow-66e7645015b8" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">建立面部识别管道</font></font></a></li>
+<li><a href="https://medium.freecodecamp.org/building-an-image-caption-generator-with-deep-learning-in-tensorflow-a142722e9b1f" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">构建图像标题生成器</font></font></a></li>
+<li><a href="https://medium.freecodecamp.org/making-your-own-face-recognition-system-29a8e728107c" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">建立自己的人脸识别系统</font></font></a></li>
+<li><a href="https://towardsdatascience.com/how-i-trained-a-language-detection-ai-in-20-minutes-with-a-97-accuracy-fdeca0fb7724" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">20 分钟内训练语言检测 AI</font></font></a></li>
+<li><a href="https://towardsdatascience.com/object-detection-with-neural-networks-a4e2c46b4491" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用神经网络进行物体检测</font></font></a></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">学习 Twitter 情绪分析 -
+</font></font><ul dir="auto">
+<li><a href="https://towardsdatascience.com/another-twitter-sentiment-analysis-bb5b01ebad90" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">第一部分-数据清理</font></font></a></li>
+<li><a href="https://towardsdatascience.com/another-twitter-sentiment-analysis-with-python-part-2-333514854913" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">第二部分-EDA，数据可视化</font></font></a></li>
+<li><a href="https://towardsdatascience.com/another-twitter-sentiment-analysis-with-python-part-3-zipfs-law-data-visualisation-fc9eadda71e7" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">第三部分 - 齐夫定律，数据可视化</font></font></a></li>
+<li><a href="https://towardsdatascience.com/another-twitter-sentiment-analysis-with-python-part-4-count-vectorizer-b3f4944e51b5" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">第四部分-特征提取（计数矢量化器）</font></font></a></li>
+<li><a href="https://towardsdatascience.com/another-twitter-sentiment-analysis-with-python-part-5-50b4e87d9bdd" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">第五部分-特征提取（Tfidf矢量化）</font></font></a></li>
+<li><a href="https://towardsdatascience.com/another-twitter-sentiment-analysis-with-python-part-6-doc2vec-603f11832504" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">第六部分-Doc2Vec</font></font></a></li>
+<li><a href="https://towardsdatascience.com/another-twitter-sentiment-analysis-with-python-part-7-phrase-modeling-doc2vec-592a8a996867" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">第七部分-短语建模+Doc2Vec</font></font></a></li>
+<li><a href="https://towardsdatascience.com/another-twitter-sentiment-analysis-with-python-part-8-dimensionality-reduction-chi2-pca-c6d06fb3fcf3" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">第八部分-降维</font></font></a></li>
+<li><a href="https://towardsdatascience.com/another-twitter-sentiment-analysis-with-python-part-9-neural-networks-with-tfidf-vectors-using-d0b4af6be6d7" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">第九部分-具有 Tfdif 向量的神经网络</font></font></a></li>
+<li><a href="https://towardsdatascience.com/another-twitter-sentiment-analysis-with-python-part-10-neural-network-with-a6441269aa3c" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">第十部分-使用 word2vec/doc2vec 的神经网络</font></font></a></li>
+<li><a href="https://towardsdatascience.com/another-twitter-sentiment-analysis-with-python-part-11-cnn-word2vec-41f5e28eda74" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">第 XI 部分 - CNN 与 Word2Vec</font></font></a></li>
+</ul>
+</li>
+<li><a href="https://becominghuman.ai/transfer-learning-retraining-inception-v3-for-custom-image-classification-2820f653c557" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用迁移学习进行自定义图像分类</font></font></a></li>
+<li><a href="https://iamtrask.github.io/2015/07/12/basic-python-network/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">学习用 11 行 Python 代码编写一个简单的神经网络</font></font></a></li>
+<li><a href="https://iamtrask.github.io/2015/07/27/python-network-part2/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用梯度下降法构建神经网络</font></font></a></li>
+<li><a href="https://heartbeat.fritz.ai/how-to-train-a-keras-model-to-generate-colors-3bc79e54971b" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">训练 Keras 模型来生成颜色</font></font></a></li>
+<li><a href="https://www.pyimagesearch.com/2018/09/10/keras-tutorial-how-to-get-started-with-keras-deep-learning-and-python/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">开始在自定义数据集上使用 Keras</font></font></a></li>
+<li><a href="https://nicholastsmith.wordpress.com/2016/02/18/eigenfaces-versus-fisherfaces-on-the-faces94-database-with-scikit-learn/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在 Faces94 数据集上使用 EigenFaces 和 FisherFaces</font></font></a></li>
+<li><a href="https://medium.com/@lvarruda/how-to-get-top-2-position-on-kaggles-mnist-digit-recognizer-48185d80a2d4" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Kaggle MNIST 数字识别器教程</font></font></a></li>
+<li><a href="https://medium.com/tensorflow/hello-deep-learning-fashion-mnist-with-keras-50fcff8cd74a" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用 tf.keras 进行时尚 MNIST 教程</font></font></a></li>
+<li><a href="https://www.pyimagesearch.com/2018/10/15/deep-learning-hydroponics-and-medical-marijuana/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">CNN 使用 Keras 自动对根部健康状况进行分类</font></font></a></li>
+<li><a href="https://www.pyimagesearch.com/2018/10/08/keras-vs-tensorflow-which-one-is-better-and-which-one-should-i-learn/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Keras 与 Tensorflow</font></font></a></li>
+<li><a href="https://www.pyimagesearch.com/2018/12/03/deep-learning-and-medical-image-analysis-with-keras/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">用于疟疾检测的深度学习和医学图像分析</font></font></a></li>
+<li><a href="https://towardsdatascience.com/transfer-learning-for-image-classification-using-keras-c47ccf09c8c8" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用 Keras 进行图像分类的迁移学习</font></font></a></li>
+<li><a href="https://github.com/kylemcdonald/SmileCNN"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用 Python 中的 CNNS 编写微笑分类器</font></font></a></li>
+<li><a href="https://towardsdatascience.com/natural-language-processing-count-vectorization-with-scikit-learn-e7804269bb5e" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用 scikit-learn 进行自然语言处理</font></font></a></li>
+<li><a href="https://towardsdatascience.com/ai-generates-taylor-swifts-song-lyrics-6fd92a03ef7e" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">编写一个 Taylor Swift 歌词生成器</font></font></a></li>
+<li><a href="https://towardsdatascience.com/how-i-built-a-face-mask-detector-for-covid-19-using-pytorch-lightning-67eb3752fd61" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用 PyTorch Lightning 进行口罩检测</font></font></a></li>
+</ul>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">各种各样的：</font></font></h3><a id="user-content-miscellaneous-1" class="anchor" aria-label="永久链接：其他：" href="#miscellaneous-1"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li><a href="https://ruslanspivak.com/lsbasi-part1/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">构建一个简单的解释器</font></font></a></li>
+<li><a href="https://hackernoon.com/learn-blockchains-by-building-one-117428612f46" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用 Python 构建一个简单的区块链</font></font></a></li>
+<li><a href="https://jeffknupp.com/blog/2014/09/01/what-is-a-nosql-database-learn-by-writing-one-in-python/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用 Python 编写 NoSQL 数据库</font></font></a></li>
+<li><a href="https://hackernoon.com/building-a-gas-pump-scanner-with-opencv-python-ios-116fe6c9ae8b" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用 OpenCV/Python/iOS 构建加油泵扫描仪</font></font></a></li>
+<li><a href="https://codequs.com/p/S14jQ5UyG/build-a-distributed-streaming-system-with-apache-kafka-and-python" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用 Python 和 Kafka 构建分布式流系统</font></font></a></li>
+<li><a href="https://csl.name/post/python-jit/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用 Python 从头编写基本的 x86-64 JIT 编译器</font></font></a></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">制作低级（Linux）调试器
+</font></font><ul dir="auto">
+<li><a href="https://blog.asrpo.com/making_a_low_level_debugger" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">第1部分</font></font></a></li>
+<li><a href="https://blog.asrpo.com/making_a_low_level_debugger_part_2" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">第 2 部分：C</font></font></a></li>
+</ul>
+</li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">实现搜索引擎
+</font></font><ul dir="auto">
+<li><a href="http://www.ardendertat.com/2011/05/30/how-to-implement-a-search-engine-part-1-create-index/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">第1部分</font></font></a></li>
+<li><a href="http://www.ardendertat.com/2011/05/31/how-to-implement-a-search-engine-part-2-query-index/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">第2部分</font></font></a></li>
+<li><a href="http://www.ardendertat.com/2011/07/17/how-to-implement-a-search-engine-part-3-ranking-tf-idf/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">第 3 部分</font></font></a></li>
+</ul>
+</li>
+<li><a href="https://robertheaton.com/2018/07/20/project-2-game-of-life/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">打造生命游戏</font></font></a></li>
+<li><a href="https://robertheaton.com/2018/06/12/programming-projects-for-advanced-beginners-ascii-art/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">创建终端 ASCII 艺术</font></font></a></li>
+<li><a href="https://robertheaton.com/2018/10/09/programming-projects-for-advanced-beginners-3-a/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">编写井字游戏 AI</font></font></a></li>
+<li><a href="https://robertheaton.com/2018/11/03/programming-project-4-photomosaics/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">创作照片马赛克艺术</font></font></a></li>
+<li><a href="https://robertheaton.com/2018/12/02/programming-project-5-snake/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在终端中构建游戏“贪吃蛇”</font></font></a></li>
+<li><a href="https://wyag.thb.lt/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">自己写一个 Git</font></font></a></li>
+<li><a href="https://www.aosabook.org/en/500L/a-python-interpreter-written-in-python.html" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Python 字节码运行器的 Python 实现</font></font></a></li>
+<li><a href="https://www.geeksforgeeks.org/voice-assistant-using-python/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用 Python 创建语音助手</font></font></a></li>
+</ul>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">去：</font></font></h2><a id="user-content-go" class="anchor" aria-label="永久链接：前往：" href="#go"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li><a href="https://www.thepolyglotdeveloper.com/2016/12/create-real-time-chat-app-golang-angular-2-websockets/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用 Golang、Angular 2 和 WebSocket 创建实时聊天应用程序</font></font></a></li>
+<li><a href="https://semaphoreci.com/community/tutorials/building-go-web-applications-and-microservices-using-gin" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用 Gin 构建 Go Web 应用程序和微服务</font></font></a></li>
+<li><a href="https://semaphoreci.com/community/tutorials/how-to-use-godog-for-behavior-driven-development-in-go" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">如何使用 Godog 进行 Go 中的行为驱动开发</font></font></a></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用 Go 构建区块链
+</font></font><ul dir="auto">
+<li><a href="https://jeiwan.net/posts/building-blockchain-in-go-part-1/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">第 1 部分：基本原型</font></font></a></li>
+<li><a href="https://jeiwan.net/posts/building-blockchain-in-go-part-2/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">第二部分：工作量证明</font></font></a></li>
+<li><a href="https://jeiwan.net/posts/building-blockchain-in-go-part-3/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">第 3 部分：持久性和 CLI</font></font></a></li>
+<li><a href="https://jeiwan.net/posts/building-blockchain-in-go-part-4/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">第 4 部分：交易 1</font></font></a></li>
+<li><a href="https://jeiwan.net/posts/building-blockchain-in-go-part-5/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">第五部分：地址</font></font></a></li>
+<li><a href="https://jeiwan.net/posts/building-blockchain-in-go-part-6/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">第 6 部分：交易 2</font></font></a></li>
+<li><a href="https://jeiwan.net/posts/building-blockchain-in-go-part-7/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">第七部分：网络</font></font></a></li>
+</ul>
+</li>
+<li><a href="https://www.youtube.com/watch?v=8fi7uSYlOdc" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用 Go 从头构建容器 - Liz Rice (Microscaling Systems)（视频）</font></font></a></li>
+<li><a href="https://astaxie.gitbooks.io/build-web-application-with-golang/content/en/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用 GoLang 构建 Web 应用程序</font></font></a></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用 ReactJS 在 Go 中构建聊天应用程序
+</font></font><ul dir="auto">
+<li><a href="https://tutorialedge.net/projects/chat-system-in-go-and-react/part-1-initial-setup/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">第 1 部分：初始设置</font></font></a></li>
+<li><a href="https://tutorialedge.net/projects/chat-system-in-go-and-react/part-2-simple-communication/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">第二部分：简单沟通</font></font></a></li>
+<li><a href="https://tutorialedge.net/projects/chat-system-in-go-and-react/part-3-designing-our-frontend/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">第 3 部分：设计我们的前端</font></font></a></li>
+<li><a href="https://tutorialedge.net/projects/chat-system-in-go-and-react/part-4-handling-multiple-clients/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">第 4 部分：处理多个客户端</font></font></a></li>
+<li><a href="https://tutorialedge.net/projects/chat-system-in-go-and-react/part-5-improved-frontend/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">第 5 部分：改进前端</font></font></a></li>
+<li><a href="https://tutorialedge.net/projects/chat-system-in-go-and-react/part-6-dockerizing-your-backend/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">第 6 部分：Docker 化你的后端</font></font></a></li>
+</ul>
+</li>
+<li><a href="https://tutorialedge.net/golang/go-webassembly-tutorial/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Go WebAssembly 教程 - 构建计算器教程</font></font></a></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Go 中的 REST 服务器
+</font></font><ul dir="auto">
+<li><a href="https://eli.thegreenplace.net/2021/rest-servers-in-go-part-1-standard-library/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">第 1 部分 - 标准库</font></font></a></li>
+<li><a href="https://eli.thegreenplace.net/2021/rest-servers-in-go-part-2-using-a-router-package/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">第 2 部分 - 使用路由器包</font></font></a></li>
+<li><a href="https://eli.thegreenplace.net/2021/rest-servers-in-go-part-3-using-a-web-framework/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">第 3 部分 - 使用 Web 框架</font></font></a></li>
+<li><a href="https://eli.thegreenplace.net/2021/rest-servers-in-go-part-4-using-openapi-and-swagger/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">第 4 部分 - 使用 OpenAPI 和 Swagger</font></font></a></li>
+<li><a href="https://eli.thegreenplace.net/2021/rest-servers-in-go-part-5-middleware/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">第 5 部分 - 中间件</font></font></a></li>
+<li><a href="https://eli.thegreenplace.net/2021/rest-servers-in-go-part-6-authentication/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">第 6 部分 - 身份验证</font></font></a></li>
+<li><a href="https://eli.thegreenplace.net/2021/rest-servers-in-go-part-7-graphql/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">第 7 部分 - GraphQL</font></font></a></li>
+</ul>
+</li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">让我们用 Go 语言构建一个 URL 缩短器 - 使用 Gin 和 Redis
+</font></font><ul dir="auto">
+<li><a href="https://www.eddywm.com/lets-build-a-url-shortener-in-go/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">第 1 部分 - 项目设置</font></font></a></li>
+<li><a href="https://www.eddywm.com/lets-build-a-url-shortener-in-go-with-redis-part-2-storage-layer/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">第 2 部分 - 存储层</font></font></a></li>
+<li><a href="https://www.eddywm.com/lets-build-a-url-shortener-in-go-part-3-short-link-generation/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">第 3 部分 - 短链接生成器</font></font></a></li>
+<li><a href="https://www.eddywm.com/lets-build-a-url-shortener-in-go-part-iv-forwarding/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">第 4 部分 - 转发</font></font></a></li>
+</ul>
+</li>
+<li><a href="https://www.youtube.com/watch?v=Sphme0BqJiY" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用 Go 构建 TCP 聊天（视频）</font></font></a></li>
+<li><a href="https://blog.jse.li/posts/torrent/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用 Go 从头开始&ZeroWidthSpace;&ZeroWidthSpace;构建 BitTorrent 客户端</font></font></a></li>
+<li><a href="https://www.youtube.com/watch?v=rx6CPDK_5mU&amp;list=PLy_6D98if3ULEtXtNSY_2qN21VCKgoQAE" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用 Go、PostgreSQL 和 Docker 的 REST API 大师班（视频播放列表）</font></font><code>in progress</code></a></li>
+</ul>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">PHP的：</font></font></h2><a id="user-content-php" class="anchor" aria-label="永久链接：PHP：" href="#php"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li><a href="https://www.youtube.com/playlist?list=PLwAKR305CRO-Q90J---jXVzbOd4CDRbVx" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">如何使用 Laravel 建立博客</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">（视频）</font></font></li>
+<li><a href="http://ilovephp.jondh.me.uk/en/tutorial/make-your-own-blog" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">创建您自己的博客（纯 PHP 语言）</font></font></a></li>
+<li><a href="https://www.silverstripe.org/learn/lessons/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用 SilverStripe 构建房地产网站示例</font></font></a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLXsbBbd36_uVjOFH_P25__XAyGsohXWlv" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用 Laravel 5.4 和 VueJS 构建实时聊天应用程序</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">（视频）</font></font></li>
+<li><a href="https://www.youtube.com/playlist?list=PLfdtiltiRHWGGxaR6uFtwZnnbcXqyq8JD" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">建立社交网络：Laravel 5 - Youtube</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">（视频）</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用 Laravel 构建功能齐全的多租户应用程序
+</font></font><ul dir="auto">
+<li><a href="https://medium.com/@ashokgelal/writing-a-full-featured-multi-tenant-laravel-app-from-scratch-a0e1a7350d9d" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">第 0 部分：简介</font></font></a></li>
+<li><a href="https://medium.com/@ashokgelal/a-full-featured-multi-tenant-app-with-laravel-part-1-4049a3cc229d" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">第 1 部分：设置</font></font></a></li>
+<li><a href="https://medium.com/@ashokgelal/a-full-featured-multi-tenant-app-with-laravel-part-2-roles-and-permissions-d9a5bfe5d525" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">第 2 部分：角色和权限</font></font></a></li>
+<li><a href="https://medium.com/@ashokgelal/a-full-featured-multi-tenant-app-with-laravel-part-3-invitation-c982dca55eb9" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">第三部分：邀请</font></font></a></li>
+<li><a href="https://medium.com/@ashokgelal/a-full-featured-multi-tenant-app-with-laravel-part-4-tenancy-aware-authentication-e0ee37270bc8" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">第 4 部分：身份验证</font></font></a></li>
+<li><a href="https://medium.com/@ashokgelal/a-full-featured-multi-tenant-app-with-laravel-part-2-unit-tests-96d6dfbf0617" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">第 5 部分：测试</font></font></a></li>
+<li><a href="https://medium.com/@ashokgelal/a-full-featured-multi-tenant-app-with-laravel-part-5-user-profile-5c3d0c655f3a" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">第六部分：用户资料</font></font></a></li>
+<li><a href="https://medium.com/@ashokgelal/a-full-featured-multi-tenant-app-with-laravel-part-7-deployment-40bb3c895627" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">第 7 部分：部署</font></font></a></li>
+</ul>
+</li>
+<li><a href="https://www.codewall.co.uk/laravel-crud-demo-with-resource-controller-tutorial/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">从头开始构建 Laravel CRUD 应用程序</font></font></a></li>
+</ul>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">OCaml：</font></font></h2><a id="user-content-ocaml" class="anchor" aria-label="永久链接：OCaml：" href="#ocaml"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li><a href="https://llvm.org/docs/tutorial/#kaleidoscope-implementing-a-language-with-llvm-in-objective-caml" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在 OCaml 中使用 LLVM 实现一种语言</font></font></a></li>
+<li><a href="https://linoscope.github.io/writing-a-game-boy-emulator-in-ocaml/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用 OCaml 编写 Game Boy 模拟器</font></font></a></li>
+</ul>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">红宝石：</font></font></h2><a id="user-content-ruby" class="anchor" aria-label="永久链接：Ruby：" href="#ruby"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li><a href="https://medium.com/geckoboard-under-the-hood/how-to-build-a-network-stack-in-ruby-f73aeb1b661b" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用 Ruby 构建网络堆栈</font></font></a></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">构建你自己的 Redis
+</font></font><ul dir="auto">
+<li><a href="https://rohitpaulk.com/articles/redis-0" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">第 0 部分：简介</font></font></a></li>
+<li><a href="https://rohitpaulk.com/articles/redis-1" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">第 1 部分：基本 TCP 服务器</font></font></a></li>
+<li><a href="https://rohitpaulk.com/articles/redis-2" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">第 2 部分：PING &lt;-&gt; PONG</font></font></a></li>
+<li><a href="https://rohitpaulk.com/articles/redis-3" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">第 3 部分：并发客户端</font></font></a></li>
+<li><a href="https://rohitpaulk.com/articles/redis-4" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">第四部分：ECHO</font></font></a></li>
+</ul>
+</li>
+<li><a href="https://thoughtbot.com/blog/rebuilding-git-in-ruby" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用 Ruby 重建 Git</font></font></a></li>
+</ul>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ruby on Rails：</font></font></h3><a id="user-content-ruby-on-rails" class="anchor" aria-label="永久链接：Ruby on Rails：" href="#ruby-on-rails"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li><a href="https://www.railstutorial.org/book" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ruby on Rails 教程</font></font></a></li>
+<li><a href="https://www.dropbox.com/s/9vq430e9s3q7pu8/Let%27s%20Build%20Instagram%20with%20Ruby%20on%20Rails%20-%20Free%20Edition.pdf?dl=0" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用 Ruby on Rails 从头构建 Instagram</font></font></a></li>
+<li><a href="https://medium.com/rails-ember-beyond/how-to-build-a-social-network-using-rails-eb31da569233" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用 Rails 构建社交网络</font></font></a></li>
+<li><a href="https://www.digitalocean.com/community/tutorials/how-to-build-a-ruby-on-rails-application" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">如何构建 Ruby on Rails 应用程序</font></font></a></li>
+</ul>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">哈斯克尔：</font></font></h2><a id="user-content-haskell" class="anchor" aria-label="永久链接：Haskell：" href="#haskell"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li><a href="http://dev.stephendiehl.com/fun/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">为你编写一个 Haskell - 构建一个现代函数式编译器</font></font></a></li>
+<li><a href="https://en.wikibooks.org/wiki/Write_Yourself_a_Scheme_in_48_Hours" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在 48 小时内为自己写一个方案</font></font></a></li>
+<li><a href="https://github.com/write-you-a-scheme-v2/scheme"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">为你写一个方案，版本 2</font></font></a></li>
+<li><a href="https://wiki.haskell.org/Roll_your_own_IRC_bot" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">打造自己的 IRC 机器人</font></font></a></li>
+<li><a href="https://lettier.github.io/posts/2016-08-15-making-movie-monad.html" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">制作电影 Monad</font></font></a></li>
+<li><a href="http://adit.io/posts/2013-04-15-making-a-website-with-haskell.html" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用 Haskell 制作网站</font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">（已过时）</font></font></strong></a></li>
+</ul>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">回覆：</font></font></h2><a id="user-content-r" class="anchor" aria-label="固定链接：R：" href="#r"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li><a href="http://shiny.rstudio.com/tutorial/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用 Shiny 构建 Web 应用程序</font></font></a></li>
+<li><a href="https://towardsdatascience.com/build-a-cryptocurrency-trading-bot-with-r-1445c429e1b1" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">构建加密货币机器人</font></font></a></li>
+<li><a href="https://towardsdatascience.com/association-rule-mining-in-r-ddf2d044ae50" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">学习 R 中的关联规则挖掘</font></font></a></li>
+</ul>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">锈：</font></font></h2><a id="user-content-rust" class="anchor" aria-label="永久链接：Rust：" href="#rust"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Rust 中的简单 Web 应用程序
+</font></font><ul dir="auto">
+<li><a href="http://joelmccracken.github.io/entries/a-simple-web-app-in-rust-pt-1/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">第1部分</font></font></a></li>
+<li><a href="http://joelmccracken.github.io/entries/a-simple-web-app-in-rust-pt-2a/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">第 2a 部分</font></font></a></li>
+<li><a href="http://joelmccracken.github.io/entries/a-simple-web-app-in-rust-pt-2b/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">第 2b 部分</font></font></a></li>
+</ul>
+</li>
+<li><a href="https://os.phil-opp.com/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">用纯 Rust 编写操作系统</font></font></a></li>
+<li><a href="https://limpet.net/mbrubeck/2014/08/08/toy-layout-engine-1.html" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用 Rust 构建浏览器引擎</font></font></a></li>
+<li><a href="http://www.goldsborough.me/rust/web/tutorial/2018/01/20/17-01-11-writing_a_microservice_in_rust/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用 Rust 编写微服务</font></font></a></li>
+<li><a href="http://cglab.ca/~abeinges/blah/too-many-lists/book/README.html" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">学习 Rust 时遇到太多链表</font></font></a></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Rust 详解：从头开始编写可扩展的聊天服务
+</font></font><ul dir="auto">
+<li><a href="https://nbaksalyar.github.io/2015/07/10/writing-chat-in-rust.html" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">第 1 部分：实现 WebSocket。简介。</font></font></a></li>
+<li><a href="https://nbaksalyar.github.io/2015/11/09/rust-in-detail-2.html" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">第 2 部分：发送和接收消息</font></font></a></li>
+</ul>
+</li>
+<li><a href="https://aimlesslygoingforward.com/blog/2019/02/09/writing-a-rust-roguelike-for-the-desktop-and-the-web/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">为桌面和 Web 编写 Rust Roguelike 游戏</font></font></a></li>
+<li><a href="http://www.sheshbabu.com/posts/rust-wasm-yew-single-page-application/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用 Rust 的单页应用程序</font></font></a></li>
+<li><a href="https://bugzmanov.github.io/nes_ebook/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">用 Rust 编写 NES 模拟器</font></font></a></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用神经网络和遗传算法创建进化模拟，并将应用程序编译为 WebAssembly
+</font></font><ul dir="auto">
+<li><a href="https://pwy.io/en/posts/learning-to-fly-pt1/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">第1部分</font></font></a></li>
+<li><a href="https://pwy.io/en/posts/learning-to-fly-pt2/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">第2部分</font></font></a></li>
+<li><a href="https://pwy.io/en/posts/learning-to-fly-pt3/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">第 3 部分</font></font></a></li>
+<li><a href="https://pwy.io/en/posts/learning-to-fly-pt4/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">第 4 部分</font></font></a></li>
+</ul>
+</li>
+</ul>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Scala：</font></font></h2><a id="user-content-scala" class="anchor" aria-label="固定链接：Scala：" href="#scala"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li><a href="https://www.freecodecamp.org/news/how-to-build-a-simple-actor-based-blockchain-aac1e996c177/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">简单的基于参与者的区块链</font></font></a></li>
+<li><a href="https://rcoh.svbtle.com/no-magic-regular-expressions" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">没有魔法：正则表达式</font></font></a></li>
+</ul>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">迅速：</font></font></h2><a id="user-content-swift" class="anchor" aria-label="永久链接：Swift：" href="#swift"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li><a href="https://www.hackingwithswift.com/read" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用 Swift 进行黑客攻击 - 通过做 39 个项目学习 Swift</font></font></a></li>
+<li><a href="https://github.com/nicklockwood/RetroRampage"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">从头开始的复古第一人称射击游戏</font></font></a></li>
+</ul>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">其他资源</font></font></h2><a id="user-content-additional-resources" class="anchor" aria-label="固定链接：其他资源" href="#additional-resources"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li><a href="https://github.com/markerikson/react-redux-links"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">React Redux 链接</font></font></a></li>
+<li><a href="https://www.udemy.com/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Udemy.com</font></font></a></li>
+<li><a href="https://www.fullstackpython.com/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">全栈 Python</font></font></a></li>
+<li><a href="https://nodeschool.io/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">节点学校</font></font></a></li>
+<li><a href="https://scotch.io/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">苏格兰威士忌</font></font></a></li>
+<li><a href="http://www.exercism.io/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">运动</font></font></a></li>
+<li><a href="http://www.egghead.io/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Egghead.io</font></font></a></li>
+<li><a href="http://mherman.org/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">迈克尔·赫尔曼的博客</font></font></a></li>
+<li><a href="http://thinkster.io" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Thinkster.io</font></font></a></li>
+<li><a href="https://enlight.nyc/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">照亮</font></font></a></li>
+<li><a href="https://hackclub.com/workshops/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">黑客俱乐部研讨会</font></font></a></li>
+<li><a href="https://codecrafters.io/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">CodeCrafters</font></font></a></li>
+</ul>
+</article></div>
